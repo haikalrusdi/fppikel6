@@ -1,0 +1,1519 @@
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:<http://example.com/filariasis.csv> .
+@prefix owl:<http://www.w3.org/2002/07/owl#> .
+@prefix dbr:<http://dbpedia.org/resource/> .
+
+ex:provinsi					a	rdfs:Class .
+ex:penyakit					a	rdfs:Class .
+
+
+ex:kodeprovinsi 			a 	rdf:Property .
+ex:kodeprovinsi 				rdfs:domain 		ex:provinsi .
+ex:kodeprovinsi					rdfs:range  		xsd:integer .
+
+ex:nama_provinsi 			a 	rdf:Property .
+ex:nama_provinsi				rdfs:domain 		ex:provinsi .
+ex:nama_provinsi 				rdfs:range 			xsd:string .
+
+ex:tahun_provinsi			a	rdf:Property .
+ex:tahun_provinsi				rdfs:domain			ex:provinsi .
+ex:tahun_provinsi				rdfs:range			xsd:integer .
+
+ex:jumlah_penduduk 			a 	rdf:Property .
+ex:jumlah_penduduk 				rdfs:domain		 	ex:provinsi .
+ex:jumlah_penduduk 				rdfs:range  		xsd:integer .
+
+ex:jumlah_penderita 		a 	rdf:Property .
+ex:jumlah_penderita 			rdfs:domain		 	ex:penyakit .
+ex:jumlah_penderita 			rdfs:range  		xsd:integer .
+
+ex:jumlah_penerima 			a 	rdf:Property .
+ex:jumlah_penerima 				rdfs:domain 		ex:penyakit .
+ex:jumlah_penerima 				rdfs:range  		xsd:integer .
+
+ex:nad2008 a ex:provinsi .
+ex:nad2008 owl:sameAs dbr:Aceh .
+ex:nad2008 rdfs:label "Aceh" .
+ex:nad2008 rdfs:kodeprovinsi "11"^^xsd:integer .
+ex:nad2008 ex:tahun "2008"^^xsd:integer .
+ex:nad2008 ex:jmlpenduduk "4312934"^^xsd:integer .
+ex:nad2008 ex:jmlpenderita "2359"^^xsd:integer .
+ex:nad2008 ex:jmlpenobat "589375"^^xsd:integer .
+
+ex:sumut2008 a ex:provinsi .
+ex:sumut2008 owl:sameAs dbr:North_Sumatra .
+ex:sumut2008 rdfs:label "Sumatera Utara" .
+ex:sumut2008 rdfs:kodeprovinsi "12"^^xsd:integer .
+ex:sumut2008 ex:tahun "2008"^^xsd:integer .
+ex:sumut2008 ex:jmlpenduduk "13733234"^^xsd:integer .
+ex:sumut2008 ex:jmlpenderita "141"^^xsd:integer .
+ex:sumut2008 ex:jmlpenobat "1128343"^^xsd:integer .
+
+ex:sumbar2008 a ex:provinsi .
+ex:sumbar2008 owl:sameAs dbr:West_Sumatra .
+ex:sumbar2008 rdfs:label "Sumatera Barat" .
+ex:sumbar2008 rdfs:kodeprovinsi "13"^^xsd:integer .
+ex:sumbar2008 ex:tahun "2008"^^xsd:integer .
+ex:sumbar2008 ex:jmlpenduduk "4535300"^^xsd:integer .
+ex:sumbar2008 ex:jmlpenderita "274"^^xsd:integer .
+ex:sumbar2008 ex:jmlpenobat "2364568"^^xsd:integer .
+
+ex:riau2008 a ex:provinsi .
+ex:riau2008 owl:sameAs dbr:Riau .
+ex:riau2008 rdfs:label "Riau" .
+ex:riau2008 rdfs:kodeprovinsi "14"^^xsd:integer .
+ex:riau2008 ex:tahun "2008"^^xsd:integer .
+ex:riau2008 ex:jmlpenduduk "6043715"^^xsd:integer .
+ex:riau2008 ex:jmlpenderita "532"^^xsd:integer .
+ex:riau2008 ex:jmlpenobat "618210"^^xsd:integer .
+
+ex:jambi2008 a ex:provinsi .
+ex:jambi2008 owl:sameAs dbr:Jambi .
+ex:jambi2008 rdfs:label "Jambi" .
+ex:jambi2008 rdfs:kodeprovinsi "15"^^xsd:integer .
+ex:jambi2008 ex:tahun "2008"^^xsd:integer .
+ex:jambi2008 ex:jmlpenduduk "2911700"^^xsd:integer .
+ex:jambi2008 ex:jmlpenderita "257"^^xsd:integer .
+ex:jambi2008 ex:jmlpenobat "299057"^^xsd:integer .
+
+ex:sumsel2008 a ex:provinsi .
+ex:sumsel2008 owl:sameAs dbr:South_Sumatra .
+ex:sumsel2008 rdfs:label "Sumatera Selatan" .
+ex:sumsel2008 rdfs:kodeprovinsi "16"^^xsd:integer .
+ex:sumsel2008 ex:tahun "2008"^^xsd:integer .
+ex:sumsel2008 ex:jmlpenduduk "8397241"^^xsd:integer .
+ex:sumsel2008 ex:jmlpenderita "210"^^xsd:integer .
+ex:sumsel2008 ex:jmlpenobat "817924"^^xsd:integer .
+
+ex:bengkulu2008 a ex:provinsi .
+ex:bengkulu2008 owl:sameAs dbr:Bengkulu .
+ex:bengkulu2008 rdfs:label "Bengkulu" .
+ex:bengkulu2008 rdfs:kodeprovinsi "17"^^xsd:integer .
+ex:bengkulu2008 ex:tahun "2008"^^xsd:integer .
+ex:bengkulu2008 ex:jmlpenduduk "1930300"^^xsd:integer .
+ex:bengkulu2008 ex:jmlpenderita "94"^^xsd:integer .
+ex:bengkulu2008 ex:jmlpenobat "737930"^^xsd:integer .
+
+ex:lampung2008 a ex:provinsi .
+ex:lampung2008 owl:sameAs dbr:Lampung .
+ex:lampung2008 rdfs:label "Lampung" .
+ex:lampung2008 rdfs:kodeprovinsi "18"^^xsd:integer .
+ex:lampung2008 ex:tahun "2008"^^xsd:integer .
+ex:lampung2008 ex:jmlpenduduk "7643900"^^xsd:integer .
+ex:lampung2008 ex:jmlpenderita "74"^^xsd:integer .
+ex:lampung2008 ex:jmlpenobat "1015894"^^xsd:integer .
+
+ex:babel2008 a ex:provinsi .
+ex:babel2008 owl:sameAs dbr:Bangka-Belitung_Islands .
+ex:babel2008 rdfs:label "Kepulauan Bangka Belitung" .
+ex:babel2008 rdfs:kodeprovinsi "19"^^xsd:integer .
+ex:babel2008 ex:tahun "2008"^^xsd:integer .
+ex:babel2008 ex:jmlpenduduk "1044700"^^xsd:integer .
+ex:babel2008 ex:jmlpenderita "207"^^xsd:integer .
+ex:babel2008 ex:jmlpenobat "224464"^^xsd:integer .
+
+ex:kepri2008 a ex:provinsi .
+ex:kepri2008 owl:sameAs dbr:Riau_Islands .
+ex:kepri2008 rdfs:label "Kepulauan Riau" .
+ex:kepri2008 rdfs:kodeprovinsi "21"^^xsd:integer .
+ex:kepri2008 ex:tahun "2008"^^xsd:integer .
+ex:kepri2008 ex:jmlpenduduk "1419635"^^xsd:integer .
+ex:kepri2008 ex:jmlpenderita "31"^^xsd:integer .
+ex:kepri2008 ex:jmlpenobat "718381"^^xsd:integer .
+
+ex:jakarta2008 a ex:provinsi .
+ex:jakarta2008 owl:sameAs dbr:Jakarta .
+ex:jakarta2008 rdfs:label "Jakarta" .
+ex:jakarta2008 rdfs:kodeprovinsi "31"^^xsd:integer .
+ex:jakarta2008 ex:tahun "2008"^^xsd:integer .
+ex:jakarta2008 ex:jmlpenduduk "8931200"^^xsd:integer .
+ex:jakarta2008 ex:jmlpenderita "53"^^xsd:integer .
+ex:jakarta2008 ex:jmlpenobat "1915648"^^xsd:integer .
+
+ex:jabar2008 a ex:provinsi .
+ex:jabar2008 owl:sameAs dbr:West_Java .
+ex:jabar2008 rdfs:label "Jawa Barat" .
+ex:jabar2008 rdfs:kodeprovinsi "32"^^xsd:integer .
+ex:jabar2008 ex:tahun "2008"^^xsd:integer .
+ex:jabar2008 ex:jmlpenduduk "42555300"^^xsd:integer .
+ex:jabar2008 ex:jmlpenderita "404"^^xsd:integer .
+ex:jabar2008 ex:jmlpenobat "11151460"^^xsd:integer .
+
+ex:jateng2008 a ex:provinsi .
+ex:jateng2008 owl:sameAs dbr:Central_Java .
+ex:jateng2008 rdfs:label "Jawa Tengah" .
+ex:jateng2008 rdfs:kodeprovinsi "33"^^xsd:integer .
+ex:jateng2008 ex:tahun "2008"^^xsd:integer .
+ex:jateng2008 ex:jmlpenduduk "32451600"^^xsd:integer .
+ex:jateng2008 ex:jmlpenderita "395"^^xsd:integer .
+ex:jateng2008 ex:jmlpenobat "1112523"^^xsd:integer .
+
+ex:yogya2008 a ex:provinsi .
+ex:yogya2008 owl:sameAs dbr:Special_Region_of_Yogyakarta .
+ex:yogya2008 rdfs:label "Yogyakarta" .
+ex:yogya2008 rdfs:kodeprovinsi "34"^^xsd:integer .
+ex:yogya2008 ex:tahun "2008"^^xsd:integer .
+ex:yogya2008 ex:jmlpenduduk "3439000"^^xsd:integer .
+ex:yogya2008 ex:jmlpenderita "37"^^xsd:integer .
+ex:yogya2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:jatim2008 a ex:provinsi .
+ex:jatim2008 owl:sameAs dbr:East_Java .
+ex:jatim2008 rdfs:label "Jawa Timur" .
+ex:jatim2008 rdfs:kodeprovinsi "35"^^xsd:integer .
+ex:jatim2008 ex:tahun "2008"^^xsd:integer .
+ex:jatim2008 ex:jmlpenduduk "36269500"^^xsd:integer .
+ex:jatim2008 ex:jmlpenderita "219"^^xsd:integer .
+ex:jatim2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:banten2008 a ex:provinsi .
+ex:banten2008 owl:sameAs dbr:Banten .
+ex:banten2008 rdfs:label "Banten" .
+ex:banten2008 rdfs:kodeprovinsi "36"^^xsd:integer .
+ex:banten2008 ex:tahun "2008"^^xsd:integer .
+ex:banten2008 ex:jmlpenduduk "10664100"^^xsd:integer .
+ex:banten2008 ex:jmlpenderita "91"^^xsd:integer .
+ex:banten2008 ex:jmlpenobat "4250527"^^xsd:integer .
+
+ex:bali2008 a ex:provinsi .
+ex:bali2008 owl:sameAs dbr:Bali .
+ex:bali2008 rdfs:label "Bali" .
+ex:bali2008 rdfs:kodeprovinsi "51"^^xsd:integer .
+ex:bali2008 ex:tahun "2008"^^xsd:integer .
+ex:bali2008 ex:jmlpenduduk "3506700"^^xsd:integer .
+ex:bali2008 ex:jmlpenderita "18"^^xsd:integer .
+ex:bali2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntb2008 a ex:provinsi .
+ex:ntb2008 owl:sameAs dbr:West_Nusa_Tenggara .
+ex:ntb2008 rdfs:label "Nusa Tenggara Barat" .
+ex:ntb2008 rdfs:kodeprovinsi "52"^^xsd:integer .
+ex:ntb2008 ex:tahun "2008"^^xsd:integer .
+ex:ntb2008 ex:jmlpenduduk "4701100"^^xsd:integer .
+ex:ntb2008 ex:jmlpenderita "71"^^xsd:integer .
+ex:ntb2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntt2008 a ex:provinsi .
+ex:ntt2008 owl:sameAs dbr:East_Nusa_Tenggara .
+ex:ntt2008 rdfs:label "Nusa Tenggara Timur" .
+ex:ntt2008 rdfs:kodeprovinsi "53"^^xsd:integer .
+ex:ntt2008 ex:tahun "2008"^^xsd:integer .
+ex:ntt2008 ex:jmlpenduduk "4417600"^^xsd:integer .
+ex:ntt2008 ex:jmlpenderita "1682"^^xsd:integer .
+ex:ntt2008 ex:jmlpenobat "112502"^^xsd:integer .
+
+ex:kalbar2008 a ex:provinsi .
+ex:kalbar2008 owl:sameAs dbr:West_Kalimantan .
+ex:kalbar2008 rdfs:label "Kalimantan Barat" .
+ex:kalbar2008 rdfs:kodeprovinsi "61"^^xsd:integer .
+ex:kalbar2008 ex:tahun "2008"^^xsd:integer .
+ex:kalbar2008 ex:jmlpenduduk "4771500"^^xsd:integer .
+ex:kalbar2008 ex:jmlpenderita "253"^^xsd:integer .
+ex:kalbar2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:kalteng2008 a ex:provinsi .
+ex:kalteng2008 owl:sameAs dbr:Central_Kalimantan .
+ex:kalteng2008 rdfs:label "Kalimantan Tengah" .
+ex:kalteng2008 rdfs:kodeprovinsi "62"^^xsd:integer .
+ex:kalteng2008 ex:tahun "2008"^^xsd:integer .
+ex:kalteng2008 ex:jmlpenduduk "2439900"^^xsd:integer .
+ex:kalteng2008 ex:jmlpenderita "225"^^xsd:integer .
+ex:kalteng2008 ex:jmlpenobat "1193419"^^xsd:integer .
+
+ex:kalsel2008 a ex:provinsi .
+ex:kalsel2008 owl:sameAs dbr:South_Kalimantan .
+ex:kalsel2008 rdfs:label "Kalimantan Selatan" .
+ex:kalsel2008 rdfs:kodeprovinsi "63"^^xsd:integer .
+ex:kalsel2008 ex:tahun "2008"^^xsd:integer .
+ex:kalsel2008 ex:jmlpenduduk "3503300"^^xsd:integer .
+ex:kalsel2008 ex:jmlpenderita "385"^^xsd:integer .
+ex:kalsel2008 ex:jmlpenobat "502753"^^xsd:integer .
+
+ex:kaltim2008 a ex:provinsi .
+ex:kaltim2008 owl:sameAs dbr:East_Kalimantan .
+ex:kaltim2008 rdfs:label "Kalimantan Timur" .
+ex:kaltim2008 rdfs:kodeprovinsi "64"^^xsd:integer .
+ex:kaltim2008 ex:tahun "2008"^^xsd:integer .
+ex:kaltim2008 ex:jmlpenduduk "3101000"^^xsd:integer .
+ex:kaltim2008 ex:jmlpenderita "409"^^xsd:integer .
+ex:kaltim2008 ex:jmlpenobat "866396"^^xsd:integer .
+
+ex:sulut2008 a ex:provinsi .
+ex:sulut2008 owl:sameAs dbr:North_Sulawesi .
+ex:sulut2008 rdfs:label "Sulawesi Utara" .
+ex:sulut2008 rdfs:kodeprovinsi "71"^^xsd:integer .
+ex:sulut2008 ex:tahun "2008"^^xsd:integer .
+ex:sulut2008 ex:jmlpenduduk "2277200"^^xsd:integer .
+ex:sulut2008 ex:jmlpenderita "30"^^xsd:integer .
+ex:sulut2008 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulteng2008 a ex:provinsi .
+ex:sulteng2008 owl:sameAs dbr:Central_Sulawesi .
+ex:sulteng2008 rdfs:label "Sulawesi Tengah" .
+ex:sulteng2008 rdfs:kodeprovinsi "72"^^xsd:integer .
+ex:sulteng2008 ex:tahun "2008"^^xsd:integer .
+ex:sulteng2008 ex:jmlpenduduk "2640500"^^xsd:integer .
+ex:sulteng2008 ex:jmlpenderita "451"^^xsd:integer .
+ex:sulteng2008 ex:jmlpenobat "409203"^^xsd:integer .
+
+ex:sulsel2008 a ex:provinsi .
+ex:sulsel2008 owl:sameAs dbr:South_Sulawesi .
+ex:sulsel2008 rdfs:label "Sulawesi Selatan" .
+ex:sulsel2008 rdfs:kodeprovinsi "73"^^xsd:integer .
+ex:sulsel2008 ex:tahun "2008"^^xsd:integer .
+ex:sulsel2008 ex:jmlpenduduk "7427508"^^xsd:integer .
+ex:sulsel2008 ex:jmlpenderita "60"^^xsd:integer .
+ex:sulsel2008 ex:jmlpenobat "383067"^^xsd:integer .
+
+ex:sultra2008 a ex:provinsi .
+ex:sultra2008 owl:sameAs dbr:Southeast_Sulawesi .
+ex:sultra2008 rdfs:label "Sulawesi Tenggara" .
+ex:sultra2008 rdfs:kodeprovinsi "74"^^xsd:integer .
+ex:sultra2008 ex:tahun "2008"^^xsd:integer .
+ex:sultra2008 ex:jmlpenduduk "2363900"^^xsd:integer .
+ex:sultra2008 ex:jmlpenderita "208"^^xsd:integer .
+ex:sultra2008 ex:jmlpenobat "394837"^^xsd:integer .
+
+ex:gorontalo2008 a ex:provinsi .
+ex:gorontalo2008 owl:sameAs dbr:Gorontalo .
+ex:gorontalo2008 rdfs:label "Gorontalo" .
+ex:gorontalo2008 rdfs:kodeprovinsi "75"^^xsd:integer .
+ex:gorontalo2008 ex:tahun "2008"^^xsd:integer .
+ex:gorontalo2008 ex:jmlpenduduk "906900"^^xsd:integer .
+ex:gorontalo2008 ex:jmlpenderita "224"^^xsd:integer .
+ex:gorontalo2008 ex:jmlpenobat "906900"^^xsd:integer .
+
+ex:sulbar2008 a ex:provinsi .
+ex:sulbar2008 owl:sameAs dbr:West_Sulawesi .
+ex:sulbar2008 rdfs:label "Sulawesi Barat" .
+ex:sulbar2008 rdfs:kodeprovinsi "76"^^xsd:integer .
+ex:sulbar2008 ex:tahun "2008"^^xsd:integer .
+ex:sulbar2008 ex:jmlpenduduk "1139093"^^xsd:integer .
+ex:sulbar2008 ex:jmlpenderita "96"^^xsd:integer .
+ex:sulbar2008 ex:jmlpenobat "422940"^^xsd:integer .
+
+ex:maluku2008 a ex:provinsi .
+ex:maluku2008 owl:sameAs dbr:Maluku_province .
+ex:maluku2008 rdfs:label "Maluku" .
+ex:maluku2008 rdfs:kodeprovinsi "81"^^xsd:integer .
+ex:maluku2008 ex:tahun "2008"^^xsd:integer .
+ex:maluku2008 ex:jmlpenduduk "1121619"^^xsd:integer .
+ex:maluku2008 ex:jmlpenderita "70"^^xsd:integer .
+ex:maluku2008 ex:jmlpenobat "230198"^^xsd:integer .
+
+ex:malut2008 a ex:provinsi .
+ex:malut2008 owl:sameAs dbr:North_Maluku .
+ex:malut2008 rdfs:label "Maluku Utara" .
+ex:malut2008 rdfs:kodeprovinsi "82"^^xsd:integer .
+ex:malut2008 ex:tahun "2008"^^xsd:integer .
+ex:malut2008 ex:jmlpenduduk "826500"^^xsd:integer .
+ex:malut2008 ex:jmlpenderita "27"^^xsd:integer .
+ex:malut2008 ex:jmlpenobat "74510"^^xsd:integer .
+
+ex:papuabarat2008 a ex:provinsi .
+ex:papuabarat2008 owl:sameAs dbr:West_Papua_province .
+ex:papuabarat2008 rdfs:label "Papua Barat" .
+ex:papuabarat2008 rdfs:kodeprovinsi "91"^^xsd:integer .
+ex:papuabarat2008 ex:tahun "2008"^^xsd:integer .
+ex:papuabarat2008 ex:jmlpenduduk "688529"^^xsd:integer .
+ex:papuabarat2008 ex:jmlpenderita "985"^^xsd:integer .
+ex:papuabarat2008 ex:jmlpenobat "191533"^^xsd:integer .
+
+ex:papua2008 a ex:provinsi .
+ex:papua2008 owl:sameAs dbr:Papua_province .
+ex:papua2008 rdfs:label "Papua" .
+ex:papua2008 rdfs:kodeprovinsi "94"^^xsd:integer .
+ex:papua2008 ex:tahun "2008"^^xsd:integer .
+ex:papua2008 ex:jmlpenduduk "2131371"^^xsd:integer .
+ex:papua2008 ex:jmlpenderita "1127"^^xsd:integer .
+ex:papua2008 ex:jmlpenobat "331396"^^xsd:integer .
+
+ex:nad2009 a ex:provinsi .
+ex:nad2009 owl:sameAs dbr:Aceh .
+ex:nad2009 rdfs:label "Aceh" .
+ex:nad2009 rdfs:kodeprovinsi "11"^^xsd:integer .
+ex:nad2009 ex:tahun "2009"^^xsd:integer .
+ex:nad2009 ex:jmlpenduduk "4333733"^^xsd:integer .
+ex:nad2009 ex:jmlpenderita "2359"^^xsd:integer .
+ex:nad2009 ex:jmlpenobat "555454"^^xsd:integer .
+
+ex:sumut2009 a ex:provinsi .
+ex:sumut2009 owl:sameAs dbr:North_Sumatra .
+ex:sumut2009 rdfs:label "Sumatera Utara" .
+ex:sumut2009 rdfs:kodeprovinsi "12"^^xsd:integer .
+ex:sumut2009 ex:tahun "2009"^^xsd:integer .
+ex:sumut2009 ex:jmlpenduduk "13873207"^^xsd:integer .
+ex:sumut2009 ex:jmlpenderita "141"^^xsd:integer .
+ex:sumut2009 ex:jmlpenobat "2175487"^^xsd:integer .
+
+ex:sumbar2009 a ex:provinsi .
+ex:sumbar2009 owl:sameAs dbr:West_Sumatra .
+ex:sumbar2009 rdfs:label "Sumatera Barat" .
+ex:sumbar2009 rdfs:kodeprovinsi "13"^^xsd:integer .
+ex:sumbar2009 ex:tahun "2009"^^xsd:integer .
+ex:sumbar2009 ex:jmlpenduduk "4564900"^^xsd:integer .
+ex:sumbar2009 ex:jmlpenderita "274"^^xsd:integer .
+ex:sumbar2009 ex:jmlpenobat "1967348"^^xsd:integer .
+
+ex:riau2009 a ex:provinsi .
+ex:riau2009 owl:sameAs dbr:Riau .
+ex:riau2009 rdfs:label "Riau" .
+ex:riau2009 rdfs:kodeprovinsi "14"^^xsd:integer .
+ex:riau2009 ex:tahun "2009"^^xsd:integer .
+ex:riau2009 ex:jmlpenduduk "6290346"^^xsd:integer .
+ex:riau2009 ex:jmlpenderita "532"^^xsd:integer .
+ex:riau2009 ex:jmlpenobat "642799"^^xsd:integer .
+
+ex:jambi2009 a ex:provinsi .
+ex:jambi2009 owl:sameAs dbr:Jambi .
+ex:jambi2009 rdfs:label "Jambi" .
+ex:jambi2009 rdfs:kodeprovinsi "15"^^xsd:integer .
+ex:jambi2009 ex:tahun "2009"^^xsd:integer .
+ex:jambi2009 ex:jmlpenduduk "2962800"^^xsd:integer .
+ex:jambi2009 ex:jmlpenderita "257"^^xsd:integer .
+ex:jambi2009 ex:jmlpenobat "304306"^^xsd:integer .
+
+ex:sumsel2009 a ex:provinsi .
+ex:sumsel2009 owl:sameAs dbr:South_Sumatra .
+ex:sumsel2009 rdfs:label "Sumatera Selatan" .
+ex:sumsel2009 rdfs:kodeprovinsi "16"^^xsd:integer .
+ex:sumsel2009 ex:tahun "2009"^^xsd:integer .
+ex:sumsel2009 ex:jmlpenduduk "8523344"^^xsd:integer .
+ex:sumsel2009 ex:jmlpenderita "210"^^xsd:integer .
+ex:sumsel2009 ex:jmlpenobat "830207"^^xsd:integer .
+
+ex:bengkulu2009 a ex:provinsi .
+ex:bengkulu2009 owl:sameAs dbr:Bengkulu .
+ex:bengkulu2009 rdfs:label "Bengkulu" .
+ex:bengkulu2009 rdfs:kodeprovinsi "17"^^xsd:integer .
+ex:bengkulu2009 ex:tahun "2009"^^xsd:integer .
+ex:bengkulu2009 ex:jmlpenduduk "1966000"^^xsd:integer .
+ex:bengkulu2009 ex:jmlpenderita "94"^^xsd:integer .
+ex:bengkulu2009 ex:jmlpenobat "588866"^^xsd:integer .
+
+ex:lampung2009 a ex:provinsi .
+ex:lampung2009 owl:sameAs dbr:Lampung .
+ex:lampung2009 rdfs:label "Lampung" .
+ex:lampung2009 rdfs:kodeprovinsi "18"^^xsd:integer .
+ex:lampung2009 ex:tahun "2009"^^xsd:integer .
+ex:lampung2009 ex:jmlpenduduk "7943600"^^xsd:integer .
+ex:lampung2009 ex:jmlpenderita "74"^^xsd:integer .
+ex:lampung2009 ex:jmlpenobat "1029701"^^xsd:integer .
+
+ex:babel2009 a ex:provinsi .
+ex:babel2009 owl:sameAs dbr:Bangka-Belitung_Islands .
+ex:babel2009 rdfs:label "Kepulauan Bangka Belitung" .
+ex:babel2009 rdfs:kodeprovinsi "19"^^xsd:integer .
+ex:babel2009 ex:tahun "2009"^^xsd:integer .
+ex:babel2009 ex:jmlpenduduk "1059500"^^xsd:integer .
+ex:babel2009 ex:jmlpenderita "207"^^xsd:integer .
+ex:babel2009 ex:jmlpenobat "227644"^^xsd:integer .
+
+ex:kepri2009 a ex:provinsi .
+ex:kepri2009 owl:sameAs dbr:Riau_Islands .
+ex:kepri2009 rdfs:label "Kepulauan Riau" .
+ex:kepri2009 rdfs:kodeprovinsi "21"^^xsd:integer .
+ex:kepri2009 ex:tahun "2009"^^xsd:integer .
+ex:kepri2009 ex:jmlpenduduk "1476154"^^xsd:integer .
+ex:kepri2009 ex:jmlpenderita "31"^^xsd:integer .
+ex:kepri2009 ex:jmlpenobat "746955"^^xsd:integer .
+
+ex:jakarta2009 a ex:provinsi .
+ex:jakarta2009 owl:sameAs dbr:Jakarta .
+ex:jakarta2009 rdfs:label "Jakarta" .
+ex:jakarta2009 rdfs:kodeprovinsi "31"^^xsd:integer .
+ex:jakarta2009 ex:tahun "2009"^^xsd:integer .
+ex:jakarta2009 ex:jmlpenduduk "9022100"^^xsd:integer .
+ex:jakarta2009 ex:jmlpenderita "53"^^xsd:integer .
+ex:jakarta2009 ex:jmlpenobat "1924372"^^xsd:integer .
+
+ex:jabar2009 a ex:provinsi .
+ex:jabar2009 owl:sameAs dbr:West_Java .
+ex:jabar2009 rdfs:label "Jawa Barat" .
+ex:jabar2009 rdfs:kodeprovinsi "32"^^xsd:integer .
+ex:jabar2009 ex:tahun "2009"^^xsd:integer .
+ex:jabar2009 ex:jmlpenduduk "43249300"^^xsd:integer .
+ex:jabar2009 ex:jmlpenderita "474"^^xsd:integer .
+ex:jabar2009 ex:jmlpenobat "13470226"^^xsd:integer .
+
+ex:jateng2009 a ex:provinsi .
+ex:jateng2009 owl:sameAs dbr:Central_Java .
+ex:jateng2009 rdfs:label "Jawa Tengah" .
+ex:jateng2009 rdfs:kodeprovinsi "33"^^xsd:integer .
+ex:jateng2009 ex:tahun "2009"^^xsd:integer .
+ex:jateng2009 ex:jmlpenduduk "32540300"^^xsd:integer .
+ex:jateng2009 ex:jmlpenderita "412"^^xsd:integer .
+ex:jateng2009 ex:jmlpenobat "839904"^^xsd:integer .
+
+ex:yogya2009 a ex:provinsi .
+ex:yogya2009 owl:sameAs dbr:Special_Region_of_Yogyakarta .
+ex:yogya2009 rdfs:label "Yogyakarta" .
+ex:yogya2009 rdfs:kodeprovinsi "34"^^xsd:integer .
+ex:yogya2009 ex:tahun "2009"^^xsd:integer .
+ex:yogya2009 ex:jmlpenduduk "3452700"^^xsd:integer .
+ex:yogya2009 ex:jmlpenderita "37"^^xsd:integer .
+ex:yogya2009 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:jatim2009 a ex:provinsi .
+ex:jatim2009 owl:sameAs dbr:East_Java .
+ex:jatim2009 rdfs:label "Jawa Timur" .
+ex:jatim2009 rdfs:kodeprovinsi "35"^^xsd:integer .
+ex:jatim2009 ex:tahun "2009"^^xsd:integer .
+ex:jatim2009 ex:jmlpenduduk "36367300"^^xsd:integer .
+ex:jatim2009 ex:jmlpenderita "219"^^xsd:integer .
+ex:jatim2009 ex:jmlpenobat "655296"^^xsd:integer .
+
+ex:banten2009 a ex:provinsi .
+ex:banten2009 owl:sameAs dbr:Banten .
+ex:banten2009 rdfs:label "Banten" .
+ex:banten2009 rdfs:kodeprovinsi "36"^^xsd:integer .
+ex:banten2009 ex:tahun "2009"^^xsd:integer .
+ex:banten2009 ex:jmlpenduduk "10950931"^^xsd:integer .
+ex:banten2009 ex:jmlpenderita "76"^^xsd:integer .
+ex:banten2009 ex:jmlpenobat "4364873"^^xsd:integer .
+
+ex:bali2009 a ex:provinsi .
+ex:bali2009 owl:sameAs dbr:Bali .
+ex:bali2009 rdfs:label "Bali" .
+ex:bali2009 rdfs:kodeprovinsi "51"^^xsd:integer .
+ex:bali2009 ex:tahun "2009"^^xsd:integer .
+ex:bali2009 ex:jmlpenduduk "3636200"^^xsd:integer .
+ex:bali2009 ex:jmlpenderita "18"^^xsd:integer .
+ex:bali2009 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntb2009 a ex:provinsi .
+ex:ntb2009 owl:sameAs dbr:West_Nusa_Tenggara .
+ex:ntb2009 rdfs:label "Nusa Tenggara Barat" .
+ex:ntb2009 rdfs:kodeprovinsi "52"^^xsd:integer .
+ex:ntb2009 ex:tahun "2009"^^xsd:integer .
+ex:ntb2009 ex:jmlpenduduk "4763100"^^xsd:integer .
+ex:ntb2009 ex:jmlpenderita "71"^^xsd:integer .
+ex:ntb2009 ex:jmlpenobat "499193"^^xsd:integer .
+
+ex:ntt2009 a ex:provinsi .
+ex:ntt2009 owl:sameAs dbr:East_Nusa_Tenggara .
+ex:ntt2009 rdfs:label "Nusa Tenggara Timur" .
+ex:ntt2009 rdfs:kodeprovinsi "53"^^xsd:integer .
+ex:ntt2009 ex:tahun "2009"^^xsd:integer .
+ex:ntt2009 ex:jmlpenduduk "4472300"^^xsd:integer .
+ex:ntt2009 ex:jmlpenderita "1730"^^xsd:integer .
+ex:ntt2009 ex:jmlpenobat "790805"^^xsd:integer .
+
+ex:kalbar2009 a ex:provinsi .
+ex:kalbar2009 owl:sameAs dbr:West_Kalimantan .
+ex:kalbar2009 rdfs:label "Kalimantan Barat" .
+ex:kalbar2009 rdfs:kodeprovinsi "61"^^xsd:integer .
+ex:kalbar2009 ex:tahun "2009"^^xsd:integer .
+ex:kalbar2009 ex:jmlpenduduk "4844600"^^xsd:integer .
+ex:kalbar2009 ex:jmlpenderita "253"^^xsd:integer .
+ex:kalbar2009 ex:jmlpenobat "1587472"^^xsd:integer .
+
+ex:kalteng2009 a ex:provinsi .
+ex:kalteng2009 owl:sameAs dbr:Central_Kalimantan .
+ex:kalteng2009 rdfs:label "Kalimantan Tengah" .
+ex:kalteng2009 rdfs:kodeprovinsi "62"^^xsd:integer .
+ex:kalteng2009 ex:tahun "2009"^^xsd:integer .
+ex:kalteng2009 ex:jmlpenduduk "2502300"^^xsd:integer .
+ex:kalteng2009 ex:jmlpenderita "225"^^xsd:integer .
+ex:kalteng2009 ex:jmlpenobat "1223940"^^xsd:integer .
+
+ex:kalsel2009 a ex:provinsi .
+ex:kalsel2009 owl:sameAs dbr:South_Kalimantan .
+ex:kalsel2009 rdfs:label "Kalimantan Selatan" .
+ex:kalsel2009 rdfs:kodeprovinsi "63"^^xsd:integer .
+ex:kalsel2009 ex:tahun "2009"^^xsd:integer .
+ex:kalsel2009 ex:jmlpenduduk "3555700"^^xsd:integer .
+ex:kalsel2009 ex:jmlpenderita "385"^^xsd:integer .
+ex:kalsel2009 ex:jmlpenobat "510273"^^xsd:integer .
+
+ex:kaltim2009 a ex:provinsi .
+ex:kaltim2009 owl:sameAs dbr:East_Kalimantan .
+ex:kaltim2009 rdfs:label "Kalimantan Timur" .
+ex:kaltim2009 rdfs:kodeprovinsi "64"^^xsd:integer .
+ex:kaltim2009 ex:tahun "2009"^^xsd:integer .
+ex:kaltim2009 ex:jmlpenduduk "3263000"^^xsd:integer .
+ex:kaltim2009 ex:jmlpenderita "409"^^xsd:integer .
+ex:kaltim2009 ex:jmlpenobat "714304"^^xsd:integer .
+
+ex:sulut2009 a ex:provinsi .
+ex:sulut2009 owl:sameAs dbr:North_Sulawesi .
+ex:sulut2009 rdfs:label "Sulawesi Utara" .
+ex:sulut2009 rdfs:kodeprovinsi "71"^^xsd:integer .
+ex:sulut2009 ex:tahun "2009"^^xsd:integer .
+ex:sulut2009 ex:jmlpenduduk "2302100"^^xsd:integer .
+ex:sulut2009 ex:jmlpenderita "30"^^xsd:integer .
+ex:sulut2009 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulteng2009 a ex:provinsi .
+ex:sulteng2009 owl:sameAs dbr:Central_Sulawesi .
+ex:sulteng2009 rdfs:label "Sulawesi Tengah" .
+ex:sulteng2009 rdfs:kodeprovinsi "72"^^xsd:integer .
+ex:sulteng2009 ex:tahun "2009"^^xsd:integer .
+ex:sulteng2009 ex:jmlpenduduk "2668400"^^xsd:integer .
+ex:sulteng2009 ex:jmlpenderita "451"^^xsd:integer .
+ex:sulteng2009 ex:jmlpenobat "614665"^^xsd:integer .
+
+ex:sulsel2009 a ex:provinsi .
+ex:sulsel2009 owl:sameAs dbr:South_Sulawesi .
+ex:sulsel2009 rdfs:label "Sulawesi Selatan" .
+ex:sulsel2009 rdfs:kodeprovinsi "73"^^xsd:integer .
+ex:sulsel2009 ex:tahun "2009"^^xsd:integer .
+ex:sulsel2009 ex:jmlpenduduk "7541065"^^xsd:integer .
+ex:sulsel2009 ex:jmlpenderita "128"^^xsd:integer .
+ex:sulsel2009 ex:jmlpenobat "388925"^^xsd:integer .
+
+ex:sultra2009 a ex:provinsi .
+ex:sultra2009 owl:sameAs dbr:Southeast_Sulawesi .
+ex:sultra2009 rdfs:label "Sulawesi Tenggara" .
+ex:sultra2009 rdfs:kodeprovinsi "74"^^xsd:integer .
+ex:sultra2009 ex:tahun "2009"^^xsd:integer .
+ex:sultra2009 ex:jmlpenduduk "2420800"^^xsd:integer .
+ex:sultra2009 ex:jmlpenderita "201"^^xsd:integer .
+ex:sultra2009 ex:jmlpenobat "290009"^^xsd:integer .
+
+ex:gorontalo2009 a ex:provinsi .
+ex:gorontalo2009 owl:sameAs dbr:Gorontalo .
+ex:gorontalo2009 rdfs:label "Gorontalo" .
+ex:gorontalo2009 rdfs:kodeprovinsi "75"^^xsd:integer .
+ex:gorontalo2009 ex:tahun "2009"^^xsd:integer .
+ex:gorontalo2009 ex:jmlpenduduk "912600"^^xsd:integer .
+ex:gorontalo2009 ex:jmlpenderita "224"^^xsd:integer .
+ex:gorontalo2009 ex:jmlpenobat "912600"^^xsd:integer .
+
+ex:sulbar2009 a ex:provinsi .
+ex:sulbar2009 owl:sameAs dbr:West_Sulawesi .
+ex:sulbar2009 rdfs:label "Sulawesi Barat" .
+ex:sulbar2009 rdfs:kodeprovinsi "76"^^xsd:integer .
+ex:sulbar2009 ex:tahun "2009"^^xsd:integer .
+ex:sulbar2009 ex:jmlpenduduk "1156511"^^xsd:integer .
+ex:sulbar2009 ex:jmlpenderita "96"^^xsd:integer .
+ex:sulbar2009 ex:jmlpenobat "429407"^^xsd:integer .
+
+ex:maluku2009 a ex:provinsi .
+ex:maluku2009 owl:sameAs dbr:Maluku_province .
+ex:maluku2009 rdfs:label "Maluku" .
+ex:maluku2009 rdfs:kodeprovinsi "81"^^xsd:integer .
+ex:maluku2009 ex:tahun "2009"^^xsd:integer .
+ex:maluku2009 ex:jmlpenduduk "1121810"^^xsd:integer .
+ex:maluku2009 ex:jmlpenderita "70"^^xsd:integer .
+ex:maluku2009 ex:jmlpenobat "230238"^^xsd:integer .
+
+ex:malut2009 a ex:provinsi .
+ex:malut2009 owl:sameAs dbr:North_Maluku .
+ex:malut2009 rdfs:label "Maluku Utara" .
+ex:malut2009 rdfs:kodeprovinsi "82"^^xsd:integer .
+ex:malut2009 ex:tahun "2009"^^xsd:integer .
+ex:malut2009 ex:jmlpenduduk "835100"^^xsd:integer .
+ex:malut2009 ex:jmlpenderita "27"^^xsd:integer .
+ex:malut2009 ex:jmlpenobat "75285"^^xsd:integer .
+
+ex:papuabarat2009 a ex:provinsi .
+ex:papuabarat2009 owl:sameAs dbr:West_Papua_province .
+ex:papuabarat2009 rdfs:label "Papua Barat" .
+ex:papuabarat2009 rdfs:kodeprovinsi "91"^^xsd:integer .
+ex:papuabarat2009 ex:tahun "2009"^^xsd:integer .
+ex:papuabarat2009 ex:jmlpenduduk "703105"^^xsd:integer .
+ex:papuabarat2009 ex:jmlpenderita "988"^^xsd:integer .
+ex:papuabarat2009 ex:jmlpenobat "214756"^^xsd:integer .
+
+ex:papua2009 a ex:provinsi .
+ex:papua2009 owl:sameAs dbr:Papua_province .
+ex:papua2009 rdfs:label "Papua" .
+ex:papua2009 rdfs:kodeprovinsi "94"^^xsd:integer .
+ex:papua2009 ex:tahun "2009"^^xsd:integer .
+ex:papua2009 ex:jmlpenduduk "2176495"^^xsd:integer .
+ex:papua2009 ex:jmlpenderita "1158"^^xsd:integer .
+ex:papua2009 ex:jmlpenobat "648787"^^xsd:integer .
+
+ex:nad2010 a ex:provinsi .
+ex:nad2010 owl:sameAs dbr:Aceh .
+ex:nad2010 rdfs:label "Aceh" .
+ex:nad2010 rdfs:kodeprovinsi "11"^^xsd:integer .
+ex:nad2010 ex:tahun "2010"^^xsd:integer .
+ex:nad2010 ex:jmlpenduduk "4356210"^^xsd:integer .
+ex:nad2010 ex:jmlpenderita "2359"^^xsd:integer .
+ex:nad2010 ex:jmlpenobat "674277"^^xsd:integer .
+
+ex:sumut2010 a ex:provinsi .
+ex:sumut2010 owl:sameAs dbr:North_Sumatra .
+ex:sumut2010 rdfs:label "Sumatera Utara" .
+ex:sumut2010 rdfs:kodeprovinsi "12"^^xsd:integer .
+ex:sumut2010 ex:tahun "2010"^^xsd:integer .
+ex:sumut2010 ex:jmlpenduduk "14016313"^^xsd:integer .
+ex:sumut2010 ex:jmlpenderita "141"^^xsd:integer .
+ex:sumut2010 ex:jmlpenobat "4468621"^^xsd:integer .
+
+ex:sumbar2010 a ex:provinsi .
+ex:sumbar2010 owl:sameAs dbr:West_Sumatra .
+ex:sumbar2010 rdfs:label "Sumatera Barat" .
+ex:sumbar2010 rdfs:kodeprovinsi "13"^^xsd:integer .
+ex:sumbar2010 ex:tahun "2010"^^xsd:integer .
+ex:sumbar2010 ex:jmlpenduduk "4597400"^^xsd:integer .
+ex:sumbar2010 ex:jmlpenderita "274"^^xsd:integer .
+ex:sumbar2010 ex:jmlpenobat "1452339"^^xsd:integer .
+
+ex:riau2010 a ex:provinsi .
+ex:riau2010 owl:sameAs dbr:Riau .
+ex:riau2010 rdfs:label "Riau" .
+ex:riau2010 rdfs:kodeprovinsi "14"^^xsd:integer .
+ex:riau2010 ex:tahun "2010"^^xsd:integer .
+ex:riau2010 ex:jmlpenduduk "6534055"^^xsd:integer .
+ex:riau2010 ex:jmlpenderita "532"^^xsd:integer .
+ex:riau2010 ex:jmlpenobat "1087553"^^xsd:integer .
+
+ex:jambi2010 a ex:provinsi .
+ex:jambi2010 owl:sameAs dbr:Jambi .
+ex:jambi2010 rdfs:label "Jambi" .
+ex:jambi2010 rdfs:kodeprovinsi "15"^^xsd:integer .
+ex:jambi2010 ex:tahun "2010"^^xsd:integer .
+ex:jambi2010 ex:jmlpenduduk "3013700"^^xsd:integer .
+ex:jambi2010 ex:jmlpenderita "221"^^xsd:integer .
+ex:jambi2010 ex:jmlpenobat "555354"^^xsd:integer .
+
+ex:sumsel2010 a ex:provinsi .
+ex:sumsel2010 owl:sameAs dbr:South_Sumatra .
+ex:sumsel2010 rdfs:label "Sumatera Selatan" .
+ex:sumsel2010 rdfs:kodeprovinsi "16"^^xsd:integer .
+ex:sumsel2010 ex:tahun "2010"^^xsd:integer .
+ex:sumsel2010 ex:jmlpenduduk "8650099"^^xsd:integer .
+ex:sumsel2010 ex:jmlpenderita "210"^^xsd:integer .
+ex:sumsel2010 ex:jmlpenobat "812626"^^xsd:integer .
+
+ex:bengkulu2010 a ex:provinsi .
+ex:bengkulu2010 owl:sameAs dbr:Bengkulu .
+ex:bengkulu2010 rdfs:label "Bengkulu" .
+ex:bengkulu2010 rdfs:kodeprovinsi "17"^^xsd:integer .
+ex:bengkulu2010 ex:tahun "2010"^^xsd:integer .
+ex:bengkulu2010 ex:jmlpenduduk "2005300"^^xsd:integer .
+ex:bengkulu2010 ex:jmlpenderita "94"^^xsd:integer .
+ex:bengkulu2010 ex:jmlpenobat "430177"^^xsd:integer .
+
+ex:lampung2010 a ex:provinsi .
+ex:lampung2010 owl:sameAs dbr:Lampung .
+ex:lampung2010 rdfs:label "Lampung" .
+ex:lampung2010 rdfs:kodeprovinsi "18"^^xsd:integer .
+ex:lampung2010 ex:tahun "2010"^^xsd:integer .
+ex:lampung2010 ex:jmlpenduduk "8057200"^^xsd:integer .
+ex:lampung2010 ex:jmlpenderita "74"^^xsd:integer .
+ex:lampung2010 ex:jmlpenobat "1043639"^^xsd:integer .
+
+ex:babel2010 a ex:provinsi .
+ex:babel2010 owl:sameAs dbr:Bangka-Belitung_Islands .
+ex:babel2010 rdfs:label "Kepulauan Bangka Belitung" .
+ex:babel2010 rdfs:kodeprovinsi "19"^^xsd:integer .
+ex:babel2010 ex:tahun "2010"^^xsd:integer .
+ex:babel2010 ex:jmlpenduduk "1073100"^^xsd:integer .
+ex:babel2010 ex:jmlpenderita "207"^^xsd:integer .
+ex:babel2010 ex:jmlpenobat "1043639"^^xsd:integer .
+
+ex:kepri2010 a ex:provinsi .
+ex:kepri2010 owl:sameAs dbr:Riau_Islands .
+ex:kepri2010 rdfs:label "Kepulauan Riau" .
+ex:kepri2010 rdfs:kodeprovinsi "21"^^xsd:integer .
+ex:kepri2010 ex:tahun "2010"^^xsd:integer .
+ex:kepri2010 ex:jmlpenduduk "1533345"^^xsd:integer .
+ex:kepri2010 ex:jmlpenderita "31"^^xsd:integer .
+ex:kepri2010 ex:jmlpenobat "775894"^^xsd:integer .
+
+ex:jakarta2010 a ex:provinsi .
+ex:jakarta2010 owl:sameAs dbr:Jakarta .
+ex:jakarta2010 rdfs:label "Jakarta" .
+ex:jakarta2010 rdfs:kodeprovinsi "31"^^xsd:integer .
+ex:jakarta2010 ex:tahun "2010"^^xsd:integer .
+ex:jakarta2010 ex:jmlpenduduk "9063000"^^xsd:integer .
+ex:jakarta2010 ex:jmlpenderita "53"^^xsd:integer .
+ex:jakarta2010 ex:jmlpenobat "1933096"^^xsd:integer .
+
+ex:jabar2010 a ex:provinsi .
+ex:jabar2010 owl:sameAs dbr:West_Java .
+ex:jabar2010 rdfs:label "Jawa Barat" .
+ex:jabar2010 rdfs:kodeprovinsi "32"^^xsd:integer .
+ex:jabar2010 ex:tahun "2010"^^xsd:integer .
+ex:jabar2010 ex:jmlpenduduk "43955800"^^xsd:integer .
+ex:jabar2010 ex:jmlpenderita "474"^^xsd:integer .
+ex:jabar2010 ex:jmlpenobat "14585933"^^xsd:integer .
+
+ex:jateng2010 a ex:provinsi .
+ex:jateng2010 owl:sameAs dbr:Central_Java .
+ex:jateng2010 rdfs:label "Jawa Tengah" .
+ex:jateng2010 rdfs:kodeprovinsi "33"^^xsd:integer .
+ex:jateng2010 ex:tahun "2010"^^xsd:integer .
+ex:jateng2010 ex:jmlpenduduk "32635000"^^xsd:integer .
+ex:jateng2010 ex:jmlpenderita "412"^^xsd:integer .
+ex:jateng2010 ex:jmlpenobat "1210068"^^xsd:integer .
+
+ex:yogya2010 a ex:provinsi .
+ex:yogya2010 owl:sameAs dbr:Special_Region_of_Yogyakarta .
+ex:yogya2010 rdfs:label "Yogyakarta" .
+ex:yogya2010 rdfs:kodeprovinsi "34"^^xsd:integer .
+ex:yogya2010 ex:tahun "2010"^^xsd:integer .
+ex:yogya2010 ex:jmlpenduduk "3496100"^^xsd:integer .
+ex:yogya2010 ex:jmlpenderita "37"^^xsd:integer .
+ex:yogya2010 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:jatim2010 a ex:provinsi .
+ex:jatim2010 owl:sameAs dbr:East_Java .
+ex:jatim2010 rdfs:label "Jawa Timur" .
+ex:jatim2010 rdfs:kodeprovinsi "35"^^xsd:integer .
+ex:jatim2010 ex:tahun "2010"^^xsd:integer .
+ex:jatim2010 ex:jmlpenduduk "36510500"^^xsd:integer .
+ex:jatim2010 ex:jmlpenderita "219"^^xsd:integer .
+ex:jatim2010 ex:jmlpenobat "1448473"^^xsd:integer .
+
+ex:banten2010 a ex:provinsi .
+ex:banten2010 owl:sameAs dbr:Banten .
+ex:banten2010 rdfs:label "Banten" .
+ex:banten2010 rdfs:kodeprovinsi "36"^^xsd:integer .
+ex:banten2010 ex:tahun "2010"^^xsd:integer .
+ex:banten2010 ex:jmlpenduduk "11244564"^^xsd:integer .
+ex:banten2010 ex:jmlpenderita "76"^^xsd:integer .
+ex:banten2010 ex:jmlpenobat "5896029"^^xsd:integer .
+
+ex:bali2010 a ex:provinsi .
+ex:bali2010 owl:sameAs dbr:Bali .
+ex:bali2010 rdfs:label "Bali" .
+ex:bali2010 rdfs:kodeprovinsi "51"^^xsd:integer .
+ex:bali2010 ex:tahun "2010"^^xsd:integer .
+ex:bali2010 ex:jmlpenduduk "3676300"^^xsd:integer .
+ex:bali2010 ex:jmlpenderita "18"^^xsd:integer .
+ex:bali2010 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntb2010 a ex:provinsi .
+ex:ntb2010 owl:sameAs dbr:West_Nusa_Tenggara .
+ex:ntb2010 rdfs:label "Nusa Tenggara Barat" .
+ex:ntb2010 rdfs:kodeprovinsi "52"^^xsd:integer .
+ex:ntb2010 ex:tahun "2010"^^xsd:integer .
+ex:ntb2010 ex:jmlpenduduk "4337000"^^xsd:integer .
+ex:ntb2010 ex:jmlpenderita "71"^^xsd:integer .
+ex:ntb2010 ex:jmlpenobat "506406"^^xsd:integer .
+
+ex:ntt2010 a ex:provinsi .
+ex:ntt2010 owl:sameAs dbr:East_Nusa_Tenggara .
+ex:ntt2010 rdfs:label "Nusa Tenggara Timur" .
+ex:ntt2010 rdfs:kodeprovinsi "53"^^xsd:integer .
+ex:ntt2010 ex:tahun "2010"^^xsd:integer .
+ex:ntt2010 ex:jmlpenduduk "4529000"^^xsd:integer .
+ex:ntt2010 ex:jmlpenderita "1730"^^xsd:integer .
+ex:ntt2010 ex:jmlpenobat "561629"^^xsd:integer .
+
+ex:kalbar2010 a ex:provinsi .
+ex:kalbar2010 owl:sameAs dbr:West_Kalimantan .
+ex:kalbar2010 rdfs:label "Kalimantan Barat" .
+ex:kalbar2010 rdfs:kodeprovinsi "61"^^xsd:integer .
+ex:kalbar2010 ex:tahun "2010"^^xsd:integer .
+ex:kalbar2010 ex:jmlpenduduk "4919000"^^xsd:integer .
+ex:kalbar2010 ex:jmlpenderita "253"^^xsd:integer .
+ex:kalbar2010 ex:jmlpenobat "1091372"^^xsd:integer .
+
+ex:kalteng2010 a ex:provinsi .
+ex:kalteng2010 owl:sameAs dbr:Central_Kalimantan .
+ex:kalteng2010 rdfs:label "Kalimantan Tengah" .
+ex:kalteng2010 rdfs:kodeprovinsi "62"^^xsd:integer .
+ex:kalteng2010 ex:tahun "2010"^^xsd:integer .
+ex:kalteng2010 ex:jmlpenduduk "2506000"^^xsd:integer .
+ex:kalteng2010 ex:jmlpenderita "225"^^xsd:integer .
+ex:kalteng2010 ex:jmlpenobat "765469"^^xsd:integer .
+
+ex:kalsel2010 a ex:provinsi .
+ex:kalsel2010 owl:sameAs dbr:South_Kalimantan .
+ex:kalsel2010 rdfs:label "Kalimantan Selatan" .
+ex:kalsel2010 rdfs:kodeprovinsi "63"^^xsd:integer .
+ex:kalsel2010 ex:tahun "2010"^^xsd:integer .
+ex:kalsel2010 ex:jmlpenduduk "3608000"^^xsd:integer .
+ex:kalsel2010 ex:jmlpenderita "385"^^xsd:integer .
+ex:kalsel2010 ex:jmlpenobat "716839"^^xsd:integer .
+
+ex:kaltim2010 a ex:provinsi .
+ex:kaltim2010 owl:sameAs dbr:East_Kalimantan .
+ex:kaltim2010 rdfs:label "Kalimantan Timur" .
+ex:kaltim2010 rdfs:kodeprovinsi "64"^^xsd:integer .
+ex:kaltim2010 ex:tahun "2010"^^xsd:integer .
+ex:kaltim2010 ex:jmlpenduduk "3343200"^^xsd:integer .
+ex:kaltim2010 ex:jmlpenderita "409"^^xsd:integer .
+ex:kaltim2010 ex:jmlpenobat "591817"^^xsd:integer .
+
+ex:sulut2010 a ex:provinsi .
+ex:sulut2010 owl:sameAs dbr:North_Sulawesi .
+ex:sulut2010 rdfs:label "Sulawesi Utara" .
+ex:sulut2010 rdfs:kodeprovinsi "71"^^xsd:integer .
+ex:sulut2010 ex:tahun "2010"^^xsd:integer .
+ex:sulut2010 ex:jmlpenduduk "2328400"^^xsd:integer .
+ex:sulut2010 ex:jmlpenderita "30"^^xsd:integer .
+ex:sulut2010 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulteng2010 a ex:provinsi .
+ex:sulteng2010 owl:sameAs dbr:Central_Sulawesi .
+ex:sulteng2010 rdfs:label "Sulawesi Tengah" .
+ex:sulteng2010 rdfs:kodeprovinsi "72"^^xsd:integer .
+ex:sulteng2010 ex:tahun "2010"^^xsd:integer .
+ex:sulteng2010 ex:jmlpenduduk "2737100"^^xsd:integer .
+ex:sulteng2010 ex:jmlpenderita "451"^^xsd:integer .
+ex:sulteng2010 ex:jmlpenobat "1149323"^^xsd:integer .
+
+ex:sulsel2010 a ex:provinsi .
+ex:sulsel2010 owl:sameAs dbr:South_Sulawesi .
+ex:sulsel2010 rdfs:label "Sulawesi Selatan" .
+ex:sulsel2010 rdfs:kodeprovinsi "73"^^xsd:integer .
+ex:sulsel2010 ex:tahun "2010"^^xsd:integer .
+ex:sulsel2010 ex:jmlpenduduk "7613557"^^xsd:integer .
+ex:sulsel2010 ex:jmlpenderita "128"^^xsd:integer .
+ex:sulsel2010 ex:jmlpenobat "257873"^^xsd:integer .
+
+ex:sultra2010 a ex:provinsi .
+ex:sultra2010 owl:sameAs dbr:Southeast_Sulawesi .
+ex:sultra2010 rdfs:label "Sulawesi Tenggara" .
+ex:sultra2010 rdfs:kodeprovinsi "74"^^xsd:integer .
+ex:sultra2010 ex:tahun "2010"^^xsd:integer .
+ex:sultra2010 ex:jmlpenduduk "2478400"^^xsd:integer .
+ex:sultra2010 ex:jmlpenderita "107"^^xsd:integer .
+ex:sultra2010 ex:jmlpenobat "598533"^^xsd:integer .
+
+ex:gorontalo2010 a ex:provinsi .
+ex:gorontalo2010 owl:sameAs dbr:Gorontalo .
+ex:gorontalo2010 rdfs:label "Gorontalo" .
+ex:gorontalo2010 rdfs:kodeprovinsi "75"^^xsd:integer .
+ex:gorontalo2010 ex:tahun "2010"^^xsd:integer .
+ex:gorontalo2010 ex:jmlpenduduk "919100"^^xsd:integer .
+ex:gorontalo2010 ex:jmlpenderita "224"^^xsd:integer .
+ex:gorontalo2010 ex:jmlpenobat "767255"^^xsd:integer .
+
+ex:sulbar2010 a ex:provinsi .
+ex:sulbar2010 owl:sameAs dbr:West_Sulawesi .
+ex:sulbar2010 rdfs:label "Sulawesi Barat" .
+ex:sulbar2010 rdfs:kodeprovinsi "76"^^xsd:integer .
+ex:sulbar2010 ex:tahun "2010"^^xsd:integer .
+ex:sulbar2010 ex:jmlpenduduk "1167626"^^xsd:integer .
+ex:sulbar2010 ex:jmlpenderita "96"^^xsd:integer .
+ex:sulbar2010 ex:jmlpenobat "529188"^^xsd:integer .
+
+ex:maluku2010 a ex:provinsi .
+ex:maluku2010 owl:sameAs dbr:Maluku_province .
+ex:maluku2010 rdfs:label "Maluku" .
+ex:maluku2010 rdfs:kodeprovinsi "81"^^xsd:integer .
+ex:maluku2010 ex:tahun "2010"^^xsd:integer .
+ex:maluku2010 ex:jmlpenduduk "1121426"^^xsd:integer .
+ex:maluku2010 ex:jmlpenderita "70"^^xsd:integer .
+ex:maluku2010 ex:jmlpenobat "163827"^^xsd:integer .
+
+ex:malut2010 a ex:provinsi .
+ex:malut2010 owl:sameAs dbr:North_Maluku .
+ex:malut2010 rdfs:label "Maluku Utara" .
+ex:malut2010 rdfs:kodeprovinsi "82"^^xsd:integer .
+ex:malut2010 ex:tahun "2010"^^xsd:integer .
+ex:malut2010 ex:jmlpenduduk "844600"^^xsd:integer .
+ex:malut2010 ex:jmlpenderita "27"^^xsd:integer .
+ex:malut2010 ex:jmlpenobat "163827"^^xsd:integer .
+
+ex:papuabarat2010 a ex:provinsi .
+ex:papuabarat2010 owl:sameAs dbr:West_Papua_province .
+ex:papuabarat2010 rdfs:label "Papua Barat" .
+ex:papuabarat2010 rdfs:kodeprovinsi "91"^^xsd:integer .
+ex:papuabarat2010 ex:tahun "2010"^^xsd:integer .
+ex:papuabarat2010 ex:jmlpenduduk "717731"^^xsd:integer .
+ex:papuabarat2010 ex:jmlpenderita "988"^^xsd:integer .
+ex:papuabarat2010 ex:jmlpenobat "418879"^^xsd:integer .
+
+ex:papua2010 a ex:provinsi .
+ex:papua2010 owl:sameAs dbr:Papua_province .
+ex:papua2010 rdfs:label "Papua" .
+ex:papua2010 rdfs:kodeprovinsi "94"^^xsd:integer .
+ex:papua2010 ex:tahun "2010"^^xsd:integer .
+ex:papua2010 ex:jmlpenduduk "2598734"^^xsd:integer .
+ex:papua2010 ex:jmlpenderita "1343"^^xsd:integer .
+ex:papua2010 ex:jmlpenobat "983926"^^xsd:integer .
+
+ex:nad2011 a ex:provinsi .
+ex:nad2011 owl:sameAs dbr:Aceh .
+ex:nad2011 rdfs:label "Aceh" .
+ex:nad2011 rdfs:kodeprovinsi "11"^^xsd:integer .
+ex:nad2011 ex:tahun "2011"^^xsd:integer .
+ex:nad2011 ex:jmlpenduduk "4378288"^^xsd:integer .
+ex:nad2011 ex:jmlpenderita "2359"^^xsd:integer .
+ex:nad2011 ex:jmlpenobat "1220127"^^xsd:integer .
+
+ex:sumut2011 a ex:provinsi .
+ex:sumut2011 owl:sameAs dbr:North_Sumatra .
+ex:sumut2011 rdfs:label "Sumatera Utara" .
+ex:sumut2011 rdfs:kodeprovinsi "12"^^xsd:integer .
+ex:sumut2011 ex:tahun "2011"^^xsd:integer .
+ex:sumut2011 ex:jmlpenduduk "14161120"^^xsd:integer .
+ex:sumut2011 ex:jmlpenderita "148"^^xsd:integer .
+ex:sumut2011 ex:jmlpenobat "5653645"^^xsd:integer .
+
+ex:sumbar2011 a ex:provinsi .
+ex:sumbar2011 owl:sameAs dbr:West_Sumatra .
+ex:sumbar2011 rdfs:label "Sumatera Barat" .
+ex:sumbar2011 rdfs:kodeprovinsi "13"^^xsd:integer .
+ex:sumbar2011 ex:tahun "2011"^^xsd:integer .
+ex:sumbar2011 ex:jmlpenduduk "4631200"^^xsd:integer .
+ex:sumbar2011 ex:jmlpenderita "274"^^xsd:integer .
+ex:sumbar2011 ex:jmlpenobat "1383848"^^xsd:integer .
+
+ex:riau2011 a ex:provinsi .
+ex:riau2011 owl:sameAs dbr:Riau .
+ex:riau2011 rdfs:label "Riau" .
+ex:riau2011 rdfs:kodeprovinsi "14"^^xsd:integer .
+ex:riau2011 ex:tahun "2011"^^xsd:integer .
+ex:riau2011 ex:jmlpenduduk "6779951"^^xsd:integer .
+ex:riau2011 ex:jmlpenderita "532"^^xsd:integer .
+ex:riau2011 ex:jmlpenobat "2542994"^^xsd:integer .
+
+ex:jambi2011 a ex:provinsi .
+ex:jambi2011 owl:sameAs dbr:Jambi .
+ex:jambi2011 rdfs:label "Jambi" .
+ex:jambi2011 rdfs:kodeprovinsi "15"^^xsd:integer .
+ex:jambi2011 ex:tahun "2011"^^xsd:integer .
+ex:jambi2011 ex:jmlpenduduk "3064800"^^xsd:integer .
+ex:jambi2011 ex:jmlpenderita "222"^^xsd:integer .
+ex:jambi2011 ex:jmlpenobat "807476"^^xsd:integer .
+
+ex:sumsel2011 a ex:provinsi .
+ex:sumsel2011 owl:sameAs dbr:South_Sumatra .
+ex:sumsel2011 rdfs:label "Sumatera Selatan" .
+ex:sumsel2011 rdfs:kodeprovinsi "16"^^xsd:integer .
+ex:sumsel2011 ex:tahun "2011"^^xsd:integer .
+ex:sumsel2011 ex:jmlpenduduk "8778107"^^xsd:integer .
+ex:sumsel2011 ex:jmlpenderita "210"^^xsd:integer .
+ex:sumsel2011 ex:jmlpenobat "1679571"^^xsd:integer .
+
+ex:bengkulu2011 a ex:provinsi .
+ex:bengkulu2011 owl:sameAs dbr:Bengkulu .
+ex:bengkulu2011 rdfs:label "Bengkulu" .
+ex:bengkulu2011 rdfs:kodeprovinsi "17"^^xsd:integer .
+ex:bengkulu2011 ex:tahun "2011"^^xsd:integer .
+ex:bengkulu2011 ex:jmlpenduduk "2043700"^^xsd:integer .
+ex:bengkulu2011 ex:jmlpenderita "94"^^xsd:integer .
+ex:bengkulu2011 ex:jmlpenobat "438415"^^xsd:integer .
+
+ex:lampung2011 a ex:provinsi .
+ex:lampung2011 owl:sameAs dbr:Lampung .
+ex:lampung2011 rdfs:label "Lampung" .
+ex:lampung2011 rdfs:kodeprovinsi "18"^^xsd:integer .
+ex:lampung2011 ex:tahun "2011"^^xsd:integer .
+ex:lampung2011 ex:jmlpenduduk "8165309"^^xsd:integer .
+ex:lampung2011 ex:jmlpenderita "74"^^xsd:integer .
+ex:lampung2011 ex:jmlpenobat "1511294"^^xsd:integer .
+
+ex:babel2011 a ex:provinsi .
+ex:babel2011 owl:sameAs dbr:Bangka-Belitung_Islands .
+ex:babel2011 rdfs:label "Kepulauan Bangka Belitung" .
+ex:babel2011 rdfs:kodeprovinsi "19"^^xsd:integer .
+ex:babel2011 ex:tahun "2011"^^xsd:integer .
+ex:babel2011 ex:jmlpenduduk "1037800"^^xsd:integer .
+ex:babel2011 ex:jmlpenderita "207"^^xsd:integer .
+ex:babel2011 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:kepri2011 a ex:provinsi .
+ex:kepri2011 owl:sameAs dbr:Riau_Islands .
+ex:kepri2011 rdfs:label "Kepulauan Riau" .
+ex:kepri2011 rdfs:kodeprovinsi "21"^^xsd:integer .
+ex:kepri2011 ex:tahun "2011"^^xsd:integer .
+ex:kepri2011 ex:jmlpenduduk "1501049"^^xsd:integer .
+ex:kepri2011 ex:jmlpenderita "31"^^xsd:integer .
+ex:kepri2011 ex:jmlpenobat "1044281"^^xsd:integer .
+
+ex:jakarta2011 a ex:provinsi .
+ex:jakarta2011 owl:sameAs dbr:Jakarta .
+ex:jakarta2011 rdfs:label "Jakarta" .
+ex:jakarta2011 rdfs:kodeprovinsi "31"^^xsd:integer .
+ex:jakarta2011 ex:tahun "2011"^^xsd:integer .
+ex:jakarta2011 ex:jmlpenduduk "9101200"^^xsd:integer .
+ex:jakarta2011 ex:jmlpenderita "53"^^xsd:integer .
+ex:jakarta2011 ex:jmlpenobat "1941243"^^xsd:integer .
+
+ex:jabar2011 a ex:provinsi .
+ex:jabar2011 owl:sameAs dbr:West_Java .
+ex:jabar2011 rdfs:label "Jawa Barat" .
+ex:jabar2011 rdfs:kodeprovinsi "32"^^xsd:integer .
+ex:jabar2011 ex:tahun "2011"^^xsd:integer .
+ex:jabar2011 ex:jmlpenduduk "43713320"^^xsd:integer .
+ex:jabar2011 ex:jmlpenderita "480"^^xsd:integer .
+ex:jabar2011 ex:jmlpenobat "11135188"^^xsd:integer .
+
+ex:jateng2011 a ex:provinsi .
+ex:jateng2011 owl:sameAs dbr:Central_Java .
+ex:jateng2011 rdfs:label "Jawa Tengah" .
+ex:jateng2011 rdfs:kodeprovinsi "33"^^xsd:integer .
+ex:jateng2011 ex:tahun "2011"^^xsd:integer .
+ex:jateng2011 ex:jmlpenduduk "32723600"^^xsd:integer .
+ex:jateng2011 ex:jmlpenderita "412"^^xsd:integer .
+ex:jateng2011 ex:jmlpenobat "2335201"^^xsd:integer .
+
+ex:yogya2011 a ex:provinsi .
+ex:yogya2011 owl:sameAs dbr:Special_Region_of_Yogyakarta .
+ex:yogya2011 rdfs:label "Yogyakarta" .
+ex:yogya2011 rdfs:kodeprovinsi "34"^^xsd:integer .
+ex:yogya2011 ex:tahun "2011"^^xsd:integer .
+ex:yogya2011 ex:jmlpenduduk "3525300"^^xsd:integer .
+ex:yogya2011 ex:jmlpenderita "37"^^xsd:integer .
+ex:yogya2011 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:jatim2011 a ex:provinsi .
+ex:jatim2011 owl:sameAs dbr:East_Java .
+ex:jatim2011 rdfs:label "Jawa Timur" .
+ex:jatim2011 rdfs:kodeprovinsi "35"^^xsd:integer .
+ex:jatim2011 ex:tahun "2011"^^xsd:integer .
+ex:jatim2011 ex:jmlpenduduk "36628500"^^xsd:integer .
+ex:jatim2011 ex:jmlpenderita "238"^^xsd:integer .
+ex:jatim2011 ex:jmlpenobat "2112794"^^xsd:integer .
+
+ex:banten2011 a ex:provinsi .
+ex:banten2011 owl:sameAs dbr:Banten .
+ex:banten2011 rdfs:label "Banten" .
+ex:banten2011 rdfs:kodeprovinsi "36"^^xsd:integer .
+ex:banten2011 ex:tahun "2011"^^xsd:integer .
+ex:banten2011 ex:jmlpenduduk "11539047"^^xsd:integer .
+ex:banten2011 ex:jmlpenderita "81"^^xsd:integer .
+ex:banten2011 ex:jmlpenobat "5683423"^^xsd:integer .
+
+ex:bali2011 a ex:provinsi .
+ex:bali2011 owl:sameAs dbr:Bali .
+ex:bali2011 rdfs:label "Bali" .
+ex:bali2011 rdfs:kodeprovinsi "51"^^xsd:integer .
+ex:bali2011 ex:tahun "2011"^^xsd:integer .
+ex:bali2011 ex:jmlpenduduk "3715600"^^xsd:integer .
+ex:bali2011 ex:jmlpenderita "18"^^xsd:integer .
+ex:bali2011 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntb2011 a ex:provinsi .
+ex:ntb2011 owl:sameAs dbr:West_Nusa_Tenggara .
+ex:ntb2011 rdfs:label "Nusa Tenggara Barat" .
+ex:ntb2011 rdfs:kodeprovinsi "52"^^xsd:integer .
+ex:ntb2011 ex:tahun "2011"^^xsd:integer .
+ex:ntb2011 ex:jmlpenduduk "4905200"^^xsd:integer .
+ex:ntb2011 ex:jmlpenderita "71"^^xsd:integer .
+ex:ntb2011 ex:jmlpenobat "513546"^^xsd:integer .
+
+ex:ntt2011 a ex:provinsi .
+ex:ntt2011 owl:sameAs dbr:East_Nusa_Tenggara .
+ex:ntt2011 rdfs:label "Nusa Tenggara Timur" .
+ex:ntt2011 rdfs:kodeprovinsi "53"^^xsd:integer .
+ex:ntt2011 ex:tahun "2011"^^xsd:integer .
+ex:ntt2011 ex:jmlpenduduk "4502857"^^xsd:integer .
+ex:ntt2011 ex:jmlpenderita "1730"^^xsd:integer .
+ex:ntt2011 ex:jmlpenobat "1882140"^^xsd:integer .
+
+ex:kalbar2011 a ex:provinsi .
+ex:kalbar2011 owl:sameAs dbr:West_Kalimantan .
+ex:kalbar2011 rdfs:label "Kalimantan Barat" .
+ex:kalbar2011 rdfs:kodeprovinsi "61"^^xsd:integer .
+ex:kalbar2011 ex:tahun "2011"^^xsd:integer .
+ex:kalbar2011 ex:jmlpenduduk "4904800"^^xsd:integer .
+ex:kalbar2011 ex:jmlpenderita "269"^^xsd:integer .
+ex:kalbar2011 ex:jmlpenobat "1500523"^^xsd:integer .
+
+ex:kalteng2011 a ex:provinsi .
+ex:kalteng2011 owl:sameAs dbr:Central_Kalimantan .
+ex:kalteng2011 rdfs:label "Kalimantan Tengah" .
+ex:kalteng2011 rdfs:kodeprovinsi "62"^^xsd:integer .
+ex:kalteng2011 ex:tahun "2011"^^xsd:integer .
+ex:kalteng2011 ex:jmlpenduduk "2628800"^^xsd:integer .
+ex:kalteng2011 ex:jmlpenderita "238"^^xsd:integer .
+ex:kalteng2011 ex:jmlpenobat "266306"^^xsd:integer .
+
+ex:kalsel2011 a ex:provinsi .
+ex:kalsel2011 owl:sameAs dbr:South_Kalimantan .
+ex:kalsel2011 rdfs:label "Kalimantan Selatan" .
+ex:kalsel2011 rdfs:kodeprovinsi "63"^^xsd:integer .
+ex:kalsel2011 ex:tahun "2011"^^xsd:integer .
+ex:kalsel2011 ex:jmlpenduduk "3662300"^^xsd:integer .
+ex:kalsel2011 ex:jmlpenderita "385"^^xsd:integer .
+ex:kalsel2011 ex:jmlpenobat "674926"^^xsd:integer .
+
+ex:kaltim2011 a ex:provinsi .
+ex:kaltim2011 owl:sameAs dbr:East_Kalimantan .
+ex:kaltim2011 rdfs:label "Kalimantan Timur" .
+ex:kaltim2011 rdfs:kodeprovinsi "64"^^xsd:integer .
+ex:kaltim2011 ex:tahun "2011"^^xsd:integer .
+ex:kaltim2011 ex:jmlpenduduk "3427600"^^xsd:integer .
+ex:kaltim2011 ex:jmlpenderita "409"^^xsd:integer .
+ex:kaltim2011 ex:jmlpenobat "674926"^^xsd:integer .
+
+ex:sulut2011 a ex:provinsi .
+ex:sulut2011 owl:sameAs dbr:North_Sulawesi .
+ex:sulut2011 rdfs:label "Sulawesi Utara" .
+ex:sulut2011 rdfs:kodeprovinsi "71"^^xsd:integer .
+ex:sulut2011 ex:tahun "2011"^^xsd:integer .
+ex:sulut2011 ex:jmlpenduduk "2352900"^^xsd:integer .
+ex:sulut2011 ex:jmlpenderita "30"^^xsd:integer .
+ex:sulut2011 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulteng2011 a ex:provinsi .
+ex:sulteng2011 owl:sameAs dbr:Central_Sulawesi .
+ex:sulteng2011 rdfs:label "Sulawesi Tengah" .
+ex:sulteng2011 rdfs:kodeprovinsi "72"^^xsd:integer .
+ex:sulteng2011 ex:tahun "2011"^^xsd:integer .
+ex:sulteng2011 ex:jmlpenduduk "2730000"^^xsd:integer .
+ex:sulteng2011 ex:jmlpenderita "468"^^xsd:integer .
+ex:sulteng2011 ex:jmlpenobat "1887193"^^xsd:integer .
+
+ex:sulsel2011 a ex:provinsi .
+ex:sulsel2011 owl:sameAs dbr:South_Sulawesi .
+ex:sulsel2011 rdfs:label "Sulawesi Selatan" .
+ex:sulsel2011 rdfs:kodeprovinsi "73"^^xsd:integer .
+ex:sulsel2011 ex:tahun "2011"^^xsd:integer .
+ex:sulsel2011 ex:jmlpenduduk "7637112"^^xsd:integer .
+ex:sulsel2011 ex:jmlpenderita "129"^^xsd:integer .
+ex:sulsel2011 ex:jmlpenobat "260364"^^xsd:integer .
+
+ex:sultra2011 a ex:provinsi .
+ex:sultra2011 owl:sameAs dbr:Southeast_Sulawesi .
+ex:sultra2011 rdfs:label "Sulawesi Tenggara" .
+ex:sultra2011 rdfs:kodeprovinsi "74"^^xsd:integer .
+ex:sultra2011 ex:tahun "2011"^^xsd:integer .
+ex:sultra2011 ex:jmlpenduduk "2536200"^^xsd:integer .
+ex:sultra2011 ex:jmlpenderita "119"^^xsd:integer .
+ex:sultra2011 ex:jmlpenobat "951648"^^xsd:integer .
+
+ex:gorontalo2011 a ex:provinsi .
+ex:gorontalo2011 owl:sameAs dbr:Gorontalo .
+ex:gorontalo2011 rdfs:label "Gorontalo" .
+ex:gorontalo2011 rdfs:kodeprovinsi "75"^^xsd:integer .
+ex:gorontalo2011 ex:tahun "2011"^^xsd:integer .
+ex:gorontalo2011 ex:jmlpenduduk "925600"^^xsd:integer .
+ex:gorontalo2011 ex:jmlpenderita "224"^^xsd:integer .
+ex:gorontalo2011 ex:jmlpenobat "152919"^^xsd:integer .
+
+ex:sulbar2011 a ex:provinsi .
+ex:sulbar2011 owl:sameAs dbr:West_Sulawesi .
+ex:sulbar2011 rdfs:label "Sulawesi Barat" .
+ex:sulbar2011 rdfs:kodeprovinsi "76"^^xsd:integer .
+ex:sulbar2011 ex:tahun "2011"^^xsd:integer .
+ex:sulbar2011 ex:jmlpenduduk "1178906"^^xsd:integer .
+ex:sulbar2011 ex:jmlpenderita "96"^^xsd:integer .
+ex:sulbar2011 ex:jmlpenobat "879405"^^xsd:integer .
+
+ex:maluku2011 a ex:provinsi .
+ex:maluku2011 owl:sameAs dbr:Maluku_province .
+ex:maluku2011 rdfs:label "Maluku" .
+ex:maluku2011 rdfs:kodeprovinsi "81"^^xsd:integer .
+ex:maluku2011 ex:tahun "2011"^^xsd:integer .
+ex:maluku2011 ex:jmlpenduduk "1120179"^^xsd:integer .
+ex:maluku2011 ex:jmlpenderita "70"^^xsd:integer .
+ex:maluku2011 ex:jmlpenobat "655321"^^xsd:integer .
+
+ex:malut2011 a ex:provinsi .
+ex:malut2011 owl:sameAs dbr:North_Maluku .
+ex:malut2011 rdfs:label "Maluku Utara" .
+ex:malut2011 rdfs:kodeprovinsi "82"^^xsd:integer .
+ex:malut2011 ex:tahun "2011"^^xsd:integer .
+ex:malut2011 ex:jmlpenduduk "853100"^^xsd:integer .
+ex:malut2011 ex:jmlpenderita "27"^^xsd:integer .
+ex:malut2011 ex:jmlpenobat "258745"^^xsd:integer .
+
+ex:papuabarat2011 a ex:provinsi .
+ex:papuabarat2011 owl:sameAs dbr:West_Papua_province .
+ex:papuabarat2011 rdfs:label "Papua Barat" .
+ex:papuabarat2011 rdfs:kodeprovinsi "91"^^xsd:integer .
+ex:papuabarat2011 ex:tahun "2011"^^xsd:integer .
+ex:papuabarat2011 ex:jmlpenduduk "732381"^^xsd:integer .
+ex:papuabarat2011 ex:jmlpenderita "988"^^xsd:integer .
+ex:papuabarat2011 ex:jmlpenobat "498485"^^xsd:integer .
+
+ex:papua2011 a ex:provinsi .
+ex:papua2011 owl:sameAs dbr:Papua_province .
+ex:papua2011 rdfs:label "Papua" .
+ex:papua2011 rdfs:kodeprovinsi "94"^^xsd:integer .
+ex:papua2011 ex:tahun "2011"^^xsd:integer .
+ex:papua2011 ex:jmlpenduduk "2651778"^^xsd:integer .
+ex:papua2011 ex:jmlpenderita "1343"^^xsd:integer .
+ex:papua2011 ex:jmlpenobat "1467228"^^xsd:integer .
+
+ex:nad2012 a ex:provinsi .
+ex:nad2012 owl:sameAs dbr:Aceh .
+ex:nad2012 rdfs:label "Aceh" .
+ex:nad2012 rdfs:kodeprovinsi "11"^^xsd:integer .
+ex:nad2012 ex:tahun "2012"^^xsd:integer .
+ex:nad2012 ex:jmlpenduduk "4399593"^^xsd:integer .
+ex:nad2012 ex:jmlpenderita "2359"^^xsd:integer .
+ex:nad2012 ex:jmlpenobat "1539290"^^xsd:integer .
+
+ex:sumut2012 a ex:provinsi .
+ex:sumut2012 owl:sameAs dbr:North_Sumatra .
+ex:sumut2012 rdfs:label "Sumatera Utara" .
+ex:sumut2012 rdfs:kodeprovinsi "12"^^xsd:integer .
+ex:sumut2012 ex:tahun "2012"^^xsd:integer .
+ex:sumut2012 ex:jmlpenduduk "14300827"^^xsd:integer .
+ex:sumut2012 ex:jmlpenderita "186"^^xsd:integer .
+ex:sumut2012 ex:jmlpenobat "6639898"^^xsd:integer .
+
+ex:sumbar2012 a ex:provinsi .
+ex:sumbar2012 owl:sameAs dbr:West_Sumatra .
+ex:sumbar2012 rdfs:label "Sumatera Barat" .
+ex:sumbar2012 rdfs:kodeprovinsi "13"^^xsd:integer .
+ex:sumbar2012 ex:tahun "2012"^^xsd:integer .
+ex:sumbar2012 ex:jmlpenduduk "4662600"^^xsd:integer .
+ex:sumbar2012 ex:jmlpenderita "193"^^xsd:integer .
+ex:sumbar2012 ex:jmlpenobat "1447770"^^xsd:integer .
+
+ex:riau2012 a ex:provinsi .
+ex:riau2012 owl:sameAs dbr:Riau .
+ex:riau2012 rdfs:label "Riau" .
+ex:riau2012 rdfs:kodeprovinsi "14"^^xsd:integer .
+ex:riau2012 ex:tahun "2012"^^xsd:integer .
+ex:riau2012 ex:jmlpenduduk "7027224"^^xsd:integer .
+ex:riau2012 ex:jmlpenderita "310"^^xsd:integer .
+ex:riau2012 ex:jmlpenobat "4058246"^^xsd:integer .
+
+ex:jambi2012 a ex:provinsi .
+ex:jambi2012 owl:sameAs dbr:Jambi .
+ex:jambi2012 rdfs:label "Jambi" .
+ex:jambi2012 rdfs:kodeprovinsi "15"^^xsd:integer .
+ex:jambi2012 ex:tahun "2012"^^xsd:integer .
+ex:jambi2012 ex:jmlpenduduk "3114700"^^xsd:integer .
+ex:jambi2012 ex:jmlpenderita "300"^^xsd:integer .
+ex:jambi2012 ex:jmlpenobat "1077998"^^xsd:integer .
+
+ex:sumsel2012 a ex:provinsi .
+ex:sumsel2012 owl:sameAs dbr:South_Sumatra .
+ex:sumsel2012 rdfs:label "Sumatera Selatan" .
+ex:sumsel2012 rdfs:kodeprovinsi "16"^^xsd:integer .
+ex:sumsel2012 ex:tahun "2012"^^xsd:integer .
+ex:sumsel2012 ex:jmlpenduduk "8904670"^^xsd:integer .
+ex:sumsel2012 ex:jmlpenderita "185"^^xsd:integer .
+ex:sumsel2012 ex:jmlpenobat "2307640"^^xsd:integer .
+
+ex:bengkulu2012 a ex:provinsi .
+ex:bengkulu2012 owl:sameAs dbr:Bengkulu .
+ex:bengkulu2012 rdfs:label "Bengkulu" .
+ex:bengkulu2012 rdfs:kodeprovinsi "17"^^xsd:integer .
+ex:bengkulu2012 ex:tahun "2012"^^xsd:integer .
+ex:bengkulu2012 ex:jmlpenduduk "2031900"^^xsd:integer .
+ex:bengkulu2012 ex:jmlpenderita "85"^^xsd:integer .
+ex:bengkulu2012 ex:jmlpenobat "930123"^^xsd:integer .
+
+ex:lampung2012 a ex:provinsi .
+ex:lampung2012 owl:sameAs dbr:Lampung .
+ex:lampung2012 rdfs:label "Lampung" .
+ex:lampung2012 rdfs:kodeprovinsi "18"^^xsd:integer .
+ex:lampung2012 ex:tahun "2012"^^xsd:integer .
+ex:lampung2012 ex:jmlpenduduk "8271097"^^xsd:integer .
+ex:lampung2012 ex:jmlpenderita "74"^^xsd:integer .
+ex:lampung2012 ex:jmlpenobat "1530857"^^xsd:integer .
+
+ex:babel2012 a ex:provinsi .
+ex:babel2012 owl:sameAs dbr:Bangka-Belitung_Islands .
+ex:babel2012 rdfs:label "Kepulauan Bangka Belitung" .
+ex:babel2012 rdfs:kodeprovinsi "19"^^xsd:integer .
+ex:babel2012 ex:tahun "2012"^^xsd:integer .
+ex:babel2012 ex:jmlpenduduk "1102400"^^xsd:integer .
+ex:babel2012 ex:jmlpenderita "207"^^xsd:integer .
+ex:babel2012 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:kepri2012 a ex:provinsi .
+ex:kepri2012 owl:sameAs dbr:Riau_Islands .
+ex:kepri2012 rdfs:label "Kepulauan Riau" .
+ex:kepri2012 rdfs:kodeprovinsi "21"^^xsd:integer .
+ex:kepri2012 ex:tahun "2012"^^xsd:integer .
+ex:kepri2012 ex:jmlpenduduk "1649076"^^xsd:integer .
+ex:kepri2012 ex:jmlpenderita "39"^^xsd:integer .
+ex:kepri2012 ex:jmlpenobat "1082367"^^xsd:integer .
+
+ex:jakarta2012 a ex:provinsi .
+ex:jakarta2012 owl:sameAs dbr:Jakarta .
+ex:jakarta2012 rdfs:label "Jakarta" .
+ex:jakarta2012 rdfs:kodeprovinsi "31"^^xsd:integer .
+ex:jakarta2012 ex:tahun "2012"^^xsd:integer .
+ex:jakarta2012 ex:jmlpenduduk "9136600"^^xsd:integer .
+ex:jakarta2012 ex:jmlpenderita "53"^^xsd:integer .
+ex:jakarta2012 ex:jmlpenobat "1948837"^^xsd:integer .
+
+ex:jabar2012 a ex:provinsi .
+ex:jabar2012 owl:sameAs dbr:West_Java .
+ex:jabar2012 rdfs:label "Jawa Barat" .
+ex:jabar2012 rdfs:kodeprovinsi "32"^^xsd:integer .
+ex:jabar2012 ex:tahun "2012"^^xsd:integer .
+ex:jabar2012 ex:jmlpenduduk "44401193"^^xsd:integer .
+ex:jabar2012 ex:jmlpenderita "480"^^xsd:integer .
+ex:jabar2012 ex:jmlpenobat "10798567"^^xsd:integer .
+
+ex:jateng2012 a ex:provinsi .
+ex:jateng2012 owl:sameAs dbr:Central_Java .
+ex:jateng2012 rdfs:label "Jawa Tengah" .
+ex:jateng2012 rdfs:kodeprovinsi "33"^^xsd:integer .
+ex:jateng2012 ex:tahun "2012"^^xsd:integer .
+ex:jateng2012 ex:jmlpenduduk "32302600"^^xsd:integer .
+ex:jateng2012 ex:jmlpenderita "412"^^xsd:integer .
+ex:jateng2012 ex:jmlpenobat "3186829"^^xsd:integer .
+
+ex:yogya2012 a ex:provinsi .
+ex:yogya2012 owl:sameAs dbr:Special_Region_of_Yogyakarta .
+ex:yogya2012 rdfs:label "Yogyakarta" .
+ex:yogya2012 rdfs:kodeprovinsi "34"^^xsd:integer .
+ex:yogya2012 ex:tahun "2012"^^xsd:integer .
+ex:yogya2012 ex:jmlpenduduk "3553100"^^xsd:integer .
+ex:yogya2012 ex:jmlpenderita "37"^^xsd:integer .
+ex:yogya2012 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:jatim2012 a ex:provinsi .
+ex:jatim2012 owl:sameAs dbr:East_Java .
+ex:jatim2012 rdfs:label "Jawa Timur" .
+ex:jatim2012 rdfs:kodeprovinsi "35"^^xsd:integer .
+ex:jatim2012 ex:tahun "2012"^^xsd:integer .
+ex:jatim2012 ex:jmlpenduduk "36734500"^^xsd:integer .
+ex:jatim2012 ex:jmlpenderita "238"^^xsd:integer .
+ex:jatim2012 ex:jmlpenobat "2118900"^^xsd:integer .
+
+ex:banten2012 a ex:provinsi .
+ex:banten2012 owl:sameAs dbr:Banten .
+ex:banten2012 rdfs:label "Banten" .
+ex:banten2012 rdfs:kodeprovinsi "36"^^xsd:integer .
+ex:banten2012 ex:tahun "2012"^^xsd:integer .
+ex:banten2012 ex:jmlpenduduk "11336730"^^xsd:integer .
+ex:banten2012 ex:jmlpenderita "81"^^xsd:integer .
+ex:banten2012 ex:jmlpenobat "4451639"^^xsd:integer .
+
+ex:bali2012 a ex:provinsi .
+ex:bali2012 owl:sameAs dbr:Bali .
+ex:bali2012 rdfs:label "Bali" .
+ex:bali2012 rdfs:kodeprovinsi "51"^^xsd:integer .
+ex:bali2012 ex:tahun "2012"^^xsd:integer .
+ex:bali2012 ex:jmlpenduduk "3754700"^^xsd:integer .
+ex:bali2012 ex:jmlpenderita "18"^^xsd:integer .
+ex:bali2012 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:ntb2012 a ex:provinsi .
+ex:ntb2012 owl:sameAs dbr:West_Nusa_Tenggara .
+ex:ntb2012 rdfs:label "Nusa Tenggara Barat" .
+ex:ntb2012 rdfs:kodeprovinsi "52"^^xsd:integer .
+ex:ntb2012 ex:tahun "2012"^^xsd:integer .
+ex:ntb2012 ex:jmlpenduduk "4973000"^^xsd:integer .
+ex:ntb2012 ex:jmlpenderita "71"^^xsd:integer .
+ex:ntb2012 ex:jmlpenobat "520645"^^xsd:integer .
+
+ex:ntt2012 a ex:provinsi .
+ex:ntt2012 owl:sameAs dbr:East_Nusa_Tenggara .
+ex:ntt2012 rdfs:label "Nusa Tenggara Timur" .
+ex:ntt2012 rdfs:kodeprovinsi "53"^^xsd:integer .
+ex:ntt2012 ex:tahun "2012"^^xsd:integer .
+ex:ntt2012 ex:jmlpenduduk "4656340"^^xsd:integer .
+ex:ntt2012 ex:jmlpenderita "1730"^^xsd:integer .
+ex:ntt2012 ex:jmlpenobat "3128952"^^xsd:integer .
+
+ex:kalbar2012 a ex:provinsi .
+ex:kalbar2012 owl:sameAs dbr:West_Kalimantan .
+ex:kalbar2012 rdfs:label "Kalimantan Barat" .
+ex:kalbar2012 rdfs:kodeprovinsi "61"^^xsd:integer .
+ex:kalbar2012 ex:tahun "2012"^^xsd:integer .
+ex:kalbar2012 ex:jmlpenduduk "5008700"^^xsd:integer .
+ex:kalbar2012 ex:jmlpenderita "269"^^xsd:integer .
+ex:kalbar2012 ex:jmlpenobat "1781486"^^xsd:integer .
+
+ex:kalteng2012 a ex:provinsi .
+ex:kalteng2012 owl:sameAs dbr:Central_Kalimantan .
+ex:kalteng2012 rdfs:label "Kalimantan Tengah" .
+ex:kalteng2012 rdfs:kodeprovinsi "62"^^xsd:integer .
+ex:kalteng2012 ex:tahun "2012"^^xsd:integer .
+ex:kalteng2012 ex:jmlpenduduk "2692600"^^xsd:integer .
+ex:kalteng2012 ex:jmlpenderita "238"^^xsd:integer .
+ex:kalteng2012 ex:jmlpenobat "433194"^^xsd:integer .
+
+ex:kalsel2012 a ex:provinsi .
+ex:kalsel2012 owl:sameAs dbr:South_Kalimantan .
+ex:kalsel2012 rdfs:label "Kalimantan Selatan" .
+ex:kalsel2012 rdfs:kodeprovinsi "63"^^xsd:integer .
+ex:kalsel2012 ex:tahun "2012"^^xsd:integer .
+ex:kalsel2012 ex:jmlpenduduk "3714400"^^xsd:integer .
+ex:kalsel2012 ex:jmlpenderita "422"^^xsd:integer .
+ex:kalsel2012 ex:jmlpenobat "859166"^^xsd:integer .
+
+ex:kaltim2012 a ex:provinsi .
+ex:kaltim2012 owl:sameAs dbr:East_Kalimantan .
+ex:kaltim2012 rdfs:label "Kalimantan Timur" .
+ex:kaltim2012 rdfs:kodeprovinsi "64"^^xsd:integer .
+ex:kaltim2012 ex:tahun "2012"^^xsd:integer .
+ex:kaltim2012 ex:jmlpenduduk "3506300"^^xsd:integer .
+ex:kaltim2012 ex:jmlpenderita "409"^^xsd:integer .
+ex:kaltim2012 ex:jmlpenobat "1130371"^^xsd:integer .
+
+ex:sulut2012 a ex:provinsi .
+ex:sulut2012 owl:sameAs dbr:North_Sulawesi .
+ex:sulut2012 rdfs:label "Sulawesi Utara" .
+ex:sulut2012 rdfs:kodeprovinsi "71"^^xsd:integer .
+ex:sulut2012 ex:tahun "2012"^^xsd:integer .
+ex:sulut2012 ex:jmlpenduduk "2378200"^^xsd:integer .
+ex:sulut2012 ex:jmlpenderita "30"^^xsd:integer .
+ex:sulut2012 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulteng2012 a ex:provinsi .
+ex:sulteng2012 owl:sameAs dbr:Central_Sulawesi .
+ex:sulteng2012 rdfs:label "Sulawesi Tengah" .
+ex:sulteng2012 rdfs:kodeprovinsi "72"^^xsd:integer .
+ex:sulteng2012 ex:tahun "2012"^^xsd:integer .
+ex:sulteng2012 ex:jmlpenduduk "2334700"^^xsd:integer .
+ex:sulteng2012 ex:jmlpenderita "503"^^xsd:integer .
+ex:sulteng2012 ex:jmlpenobat "1323547"^^xsd:integer .
+
+ex:sulsel2012 a ex:provinsi .
+ex:sulsel2012 owl:sameAs dbr:South_Sulawesi .
+ex:sulsel2012 rdfs:label "Sulawesi Selatan" .
+ex:sulsel2012 rdfs:kodeprovinsi "73"^^xsd:integer .
+ex:sulsel2012 ex:tahun "2012"^^xsd:integer .
+ex:sulsel2012 ex:jmlpenduduk "7760667"^^xsd:integer .
+ex:sulsel2012 ex:jmlpenderita "133"^^xsd:integer .
+ex:sulsel2012 ex:jmlpenobat "262855"^^xsd:integer .
+
+ex:sultra2012 a ex:provinsi .
+ex:sultra2012 owl:sameAs dbr:Southeast_Sulawesi .
+ex:sultra2012 rdfs:label "Sulawesi Tenggara" .
+ex:sultra2012 rdfs:kodeprovinsi "74"^^xsd:integer .
+ex:sultra2012 ex:tahun "2012"^^xsd:integer .
+ex:sultra2012 ex:jmlpenduduk "2593300"^^xsd:integer .
+ex:sultra2012 ex:jmlpenderita "119"^^xsd:integer .
+ex:sultra2012 ex:jmlpenobat "1116502"^^xsd:integer .
+
+ex:gorontalo2012 a ex:provinsi .
+ex:gorontalo2012 owl:sameAs dbr:Gorontalo .
+ex:gorontalo2012 rdfs:label "Gorontalo" .
+ex:gorontalo2012 rdfs:kodeprovinsi "75"^^xsd:integer .
+ex:gorontalo2012 ex:tahun "2012"^^xsd:integer .
+ex:gorontalo2012 ex:jmlpenduduk "931100"^^xsd:integer .
+ex:gorontalo2012 ex:jmlpenderita "224"^^xsd:integer .
+ex:gorontalo2012 ex:jmlpenobat "0"^^xsd:integer .
+
+ex:sulbar2012 a ex:provinsi .
+ex:sulbar2012 owl:sameAs dbr:West_Sulawesi .
+ex:sulbar2012 rdfs:label "Sulawesi Barat" .
+ex:sulbar2012 rdfs:kodeprovinsi "76"^^xsd:integer .
+ex:sulbar2012 ex:tahun "2012"^^xsd:integer .
+ex:sulbar2012 ex:jmlpenduduk "1190136"^^xsd:integer .
+ex:sulbar2012 ex:jmlpenderita "96"^^xsd:integer .
+ex:sulbar2012 ex:jmlpenobat "586400"^^xsd:integer .
+
+ex:maluku2012 a ex:provinsi .
+ex:maluku2012 owl:sameAs dbr:Maluku_province .
+ex:maluku2012 rdfs:label "Maluku" .
+ex:maluku2012 rdfs:kodeprovinsi "81"^^xsd:integer .
+ex:maluku2012 ex:tahun "2012"^^xsd:integer .
+ex:maluku2012 ex:jmlpenduduk "1117730"^^xsd:integer .
+ex:maluku2012 ex:jmlpenderita "70"^^xsd:integer .
+ex:maluku2012 ex:jmlpenobat "493514"^^xsd:integer .
+
+ex:malut2012 a ex:provinsi .
+ex:malut2012 owl:sameAs dbr:North_Maluku .
+ex:malut2012 rdfs:label "Maluku Utara" .
+ex:malut2012 rdfs:kodeprovinsi "82"^^xsd:integer .
+ex:malut2012 ex:tahun "2012"^^xsd:integer .
+ex:malut2012 ex:jmlpenduduk "861600"^^xsd:integer .
+ex:malut2012 ex:jmlpenderita "27"^^xsd:integer .
+ex:malut2012 ex:jmlpenobat "297007"^^xsd:integer .
+
+ex:papuabarat2012 a ex:provinsi .
+ex:papuabarat2012 owl:sameAs dbr:West_Papua_province .
+ex:papuabarat2012 rdfs:label "Papua Barat" .
+ex:papuabarat2012 rdfs:kodeprovinsi "91"^^xsd:integer .
+ex:papuabarat2012 ex:tahun "2012"^^xsd:integer .
+ex:papuabarat2012 ex:jmlpenduduk "747007"^^xsd:integer .
+ex:papuabarat2012 ex:jmlpenderita "988"^^xsd:integer .
+ex:papuabarat2012 ex:jmlpenobat "559994"^^xsd:integer .
+
+ex:papua2012 a ex:provinsi .
+ex:papua2012 owl:sameAs dbr:Papua_province .
+ex:papua2012 rdfs:label "Papua" .
+ex:papua2012 rdfs:kodeprovinsi "94"^^xsd:integer .
+ex:papua2012 ex:tahun "2012"^^xsd:integer .
+ex:papua2012 ex:jmlpenduduk "2704734"^^xsd:integer .
+ex:papua2012 ex:jmlpenderita "1346"^^xsd:integer .
+ex:papua2012 ex:jmlpenobat "1881095"^^xsd:integer .
