@@ -1,0 +1,16 @@
+PREFIX ex: <http://example.com/filariasis.csv>
+PREFIX ol: <http://data.intip.in/sparql/>
+PREFIX eol: <http://purl.org/biodiversity/eol/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+SELECT ?Provinsi ?kode_provinsi ?PDRB_per_kapita_2014_juta_rupiah ?Longitude ?Latitude ?tahun ?jumlah_penduduk ?jumlah_penderita ?jumlah_penerima (?jumlah_penderita*100/?jumlah_penduduk as ?persentasefilariasis) (?jumlah_penderita*100/?jumlah_penduduk as ?persentasepenerima)
+WHERE {
+  SERVICE <http://data.intip.in/sparql/> { SELECT ?Provinsi ?PDRB_per_kapita_2014_juta_rupiah ?Longitude ?Latitude WHERE {} } .
+  ?ins rdfs:label ?Provinsi .
+  ?ins rdfs:kodeprovinsi ?kode_provinsi .
+  ?ins ex:tahun ?tahun .
+  ?ins ex:jmlpenduduk ?jumlah_penduduk .
+  ?ins ex:jmlpenderita ?jumlah_penderita .
+  ?ins ex:jmlpenobat ?jumlah_penerima .
+}

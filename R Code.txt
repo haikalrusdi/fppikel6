@@ -1,0 +1,36 @@
+\\Mengimport data CSV hasilan dari query SPARQL
+datacsv = read.csv("D:/PI/.../filariasis.csv")
+datafilariasis <- datacsv
+
+\\Menghilangkan kolom yang tidak diperlukan
+datafilariasis$Provinsi <- NULL
+datafilariasis$PDRB_per_kapita_2014_juta_rupiah <- NULL
+datafilariasis$Longitude <- NULL
+datafilariasis$Latitude <- NULL
+datafilariasis$tahun <- NULL
+datafilariasis$persentasefilariasis <- NULL
+datafilariasis$persentasepenerima <- NULL
+
+\\Melakukan Clustering K-Means dengan jumlah cluster yang diinginkan
+hasil <- kmeans( presentase, 3 )
+hasil
+
+\\ Hasil dari klasterisasi
+datafilariasis$cluster <- hasil$cluster
+
+\\Menempatkan hasil cluster di setiap provinsi dengan membaca data latitude dan longitude
+filariasis = data.frame( datafilariasis$cluster, pi2009$Latitude, pi2009$Longitude )
+colnames( filariasis ) = c( 'cluster', 'latitude', 'longitude' )
+
+\\Memvisualisasikan menggunakan library ggmap
+library(ggmap)
+mapzoom = OSM_scale_lookup(zoom = 7)
+
+\\Mengunduh peta dan Menentukan posisi Indonesia pada peta
+peta = ggmap(get_openstreetmap(bbox = c(left = 94.328, bottom = -13.795, right = 140.977, top = 12.426), scale = mapzoom), extent="normal")
+peta +
+
+\\Visualisasi tiap provinsi dalam bentuk lingkaran dengan 3 warna cluster yang berbeda
+  geom_point(aes(x=long, y=lat, color=factor(cluster)), data=filariasis, alpha=0.6, size=5) +
+  scale_colour_manual(values = c("yellow","red", "green"))  
+
